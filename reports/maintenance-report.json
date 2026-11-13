@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "timestamp": "2026-11-13T17:47:51.296298+00:00",
+  "version": "1.0.0-rc1",
+  "installation_healthy": true,
+  "manifests_consistent": true,
+  "policy_files_intact": true,
+  "cli_drivers_intact": true,
+  "schemas_compatible": true,
+  "zero_telemetry_guarantee": true,
+  "known_limitations": [
+    "Native multi-phase execution certified on Google Antigravity.",
+    "Fast-forward git remote permissions required for publishing."
+  ],
+  "recommendations": [
+    "All post-release operational invariants verified. Ready for maintainer sign-off."
+  ],
+  "errors": [],
+  "warnings": []
+}

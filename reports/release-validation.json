@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "timestamp": "2026-11-13T17:47:35.719199+00:00",
+  "repocraft_version": "1.0.0-rc1",
+  "release_status": "READY_FOR_RELEASE",
+  "distribution_package": {
+    "archive_name": "repocraft-1.0.0-rc1.zip",
+    "sha256": "44c3775c64a0e396d12d4d457230034fbb497436b9656d5c3a8543421207c145",
+    "size_bytes": 872381,
+    "valid": true
+  },
+  "installation_health": "PASS",
+  "manifest_consistency": true,
+  "zero_telemetry": true,
+  "regression_test_summary": {
+    "total_passed": 456,
+    "phase7_passed": 29
+  },
+  "gate_e_preserved": true
+}

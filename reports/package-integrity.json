@@ -1,0 +1,16 @@
+{
+  "is_valid": true,
+  "archive_path": "C:\\Users\\sanja\\project\\RepoCraft\\dist\\repocraft-1.0.0-rc1.zip",
+  "errors": [],
+  "warnings": [],
+  "missing_required_files": [],
+  "unexpected_files": [],
+  "path_traversal_detected": false,
+  "duplicate_entries": [],
+  "checksum_mismatches": [],
+  "secret_patterns_detected": [],
+  "extractable": true,
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-13T17:10:17.110882+00:00",
+  "repocraft_version": "1.0.0-rc1"
+}

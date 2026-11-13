@@ -1,0 +1,96 @@
+{
+  "is_valid": false,
+  "target_repo": "C:\\Users\\sanja\\project\\RepoCraft",
+  "reports_dir": "C:\\Users\\sanja\\project\\RepoCraft\\reports",
+  "executed_phases": [
+    "phase_6_release"
+  ],
+  "missing_phases": [
+    "phase_0_init",
+    "phase_1_intel",
+    "phase_2_maintenance",
+    "phase_3_security",
+    "phase_4_repair",
+    "phase_5_git_review"
+  ],
+  "handoff_results": [
+    {
+      "from_phase": "phase_5_publish",
+      "to_phase": "phase_6_release",
+      "is_valid": false,
+      "missing_inputs": [
+        "inventory.json",
+        "git-state.json",
+        "git-workflow-report.md"
+      ],
+      "invalid_schemas": [],
+      "identity_mismatch": false,
+      "errors": [
+        "Required input artifact 'inventory.json' is missing.",
+        "Required input artifact 'git-state.json' is missing.",
+        "Required input artifact 'git-workflow-report.md' is missing."
+      ],
+      "warnings": []
+    }
+  ],
+  "artifact_evaluations": {
+    "INSTALL-MANIFEST.json": false,
+    "inventory.json": false,
+    "repository-overview.md": false,
+    "repository-audit.md": false,
+    "recommendations.json": false,
+    "maintenance-analysis.json": false,
+    "README-improved.md": false,
+    "documentation-audit.md": false,
+    "github-presentation-audit.md": false,
+    "maintenance-plan.json": false,
+    "phase2-report.md": false,
+    "security-findings.json": false,
+    "dependency-audit.json": false,
+    "test-analysis.json": false,
+    "test-execution-report.json": false,
+    "cicd-audit.json": false,
+    "security-quality-report.md": false,
+    "phase3-report.md": false,
+    "repair-findings.json": false,
+    "repair-plan.json": false,
+    "approval-manifest.json": false,
+    "repair-execution.json": false,
+    "regression-comparison.json": false,
+    "rollback-report.json": false,
+    "phase4-report.md": false,
+    "git-state.json": false,
+    "git-change-review.md": false,
+    "git-change-review.json": false,
+    "staging-plan.json": false,
+    "staging-approval.json": false,
+    "staging-result.json": false,
+    "commit-proposal.md": false,
+    "commit-approval.json": false,
+    "commit-receipt.json": false,
+    "remote-status.json": false,
+    "push-plan.json": false,
+    "push-approval.json": false,
+    "push-result.json": false,
+    "pull-request-draft.md": false,
+    "git-workflow-report.md": false,
+    "agent-compatibility.json": true,
+    "phase-registry.json": false,
+    "artifact-registry.json": false,
+    "lifecycle-integration-report.json": false,
+    "release-manifest.json": false,
+    "package-integrity.json": false,
+    "release-readiness.json": false,
+    "phase6-security-audit.json": false
+  },
+  "approval_boundaries_preserved": true,
+  "errors": [
+    "Required input artifact 'inventory.json' is missing.",
+    "Required input artifact 'git-state.json' is missing.",
+    "Required input artifact 'git-workflow-report.md' is missing."
+  ],
+  "warnings": [],
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-13T17:10:15.161238+00:00",
+  "repocraft_version": "1.0.0-rc1"
+}

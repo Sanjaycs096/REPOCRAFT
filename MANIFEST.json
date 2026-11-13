@@ -1,0 +1,17 @@
+{
+  "name": "RepoCraft",
+  "version": "1.0.0-rc1",
+  "phase": 6,
+  "status": "phase-7-distribution-and-maintenance-ready",
+  "canonical_skill": "skill/SKILL.md",
+  "initial_agent_target": "antigravity",
+  "install_script": "install.py",
+  "intelligence_script": "skill/scripts/repocraft_intel.py",
+  "maintenance_script": "skill/scripts/repocraft_maintenance.py",
+  "security_script": "skill/scripts/repocraft_security.py",
+  "repair_script": "skill/scripts/repocraft_repair.py",
+  "git_script": "skill/scripts/repocraft_git.py",
+  "status_script": "skill/scripts/repocraft_status.py",
+  "release_script": "skill/scripts/repocraft_release.py",
+  "note": "Phase 7 Release Publication, Distribution, Adoption & Post-Release Maintenance implemented. Release candidate verification, automated upgrade/rollback, multi-platform CI/CD, adoption documentation, and post-release maintenance auditing completed. Candidate distribution ready for maintainer sign-off under Gate E."
+}

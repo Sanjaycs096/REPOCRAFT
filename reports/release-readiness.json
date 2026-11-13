@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "repocraft_version": "1.0.0-rc1",
+  "generated_at": "2026-11-13T17:10:17.110882+00:00",
+  "release_status": "BLOCKED",
+  "gates": {
+    "gate_a_architecture": {
+      "gate_id": "gate_a_architecture",
+      "name": "Architecture & Modularity",
+      "status": "PASS",
+      "summary": "All 6 phases registered with modular CLI entry points, clear input/output contracts, and standard schemas.",
+      "evidence": [
+        "Phase 0 through Phase 6 registered in PhaseRegistry",
+        "39 artifacts registered with schema contracts and sensitivity classifications",
+        "Topological DAG validated with no circular dependencies"
+      ],
+      "blockers": []
+    },
+    "gate_b_compatibility": {
+      "gate_id": "gate_b_compatibility",
+      "name": "Agent Compatibility",
+      "status": "PASS",
+      "summary": "Antigravity certified as primary target; other agents calibrated accurately without misleading claims.",
+      "evidence": [
+        "Antigravity: certified SUPPORTED with native .agent/skills layout",
+        "Claude Code: certified INSTALLATION_ONLY",
+        "Cursor & Generic: certified MANUAL_CONFIGURATION_REQUIRED",
+        "No unsupported agent advertised as certified"
+      ],
+      "blockers": []
+    },
+    "gate_c_integration": {
+      "gate_id": "gate_c_integration",
+      "name": "Lifecycle Integration",
+      "status": "FAIL",
+      "summary": "Phase handoffs validated end-to-end; cryptographic approval boundaries strictly preserved.",
+      "evidence": [
+        "Phase 1 -> 2 -> 3 -> 4 -> 5 -> 6 pipeline handoffs verified",
+        "Independent approval gates for staging, commit, and push verified"
+      ],
+      "blockers": [
+        "Lifecycle handoff or schema validation failed"
+      ]
+    },
+    "gate_d_packaging": {
+      "gate_id": "gate_d_packaging",
+      "name": "Release Packaging",
+      "status": "PASS",
+      "summary": "Deterministic ZIP archive generated with cryptographic manifest; no development artifacts or secrets included.",
+      "evidence": [
+        "Archive extraction and path traversal safety verified",
+        "Tests and development caches excluded from distribution archive"
+      ],
+      "blockers": []
+    },
+    "gate_e_portability": {
+      "gate_id": "gate_e_portability",
+      "name": "Installation & Portability",
+      "status": "PASS",
+      "summary": "Installed copy operates completely independently of developer checkout; user project files protected.",
+      "evidence": [
+        "Installer contract tests pass",
+        "Pre-existing files protected from overwriting without --force",
+        "Automatic verified backup on force install",
+        "Zero hardcoded developer or OS-specific paths in runtime code"
+      ],
+      "blockers": []
+    },
+    "gate_f_security": {
+      "gate_id": "gate_f_security",
+      "name": "Security & Supply Chain",
+      "status": "PASS",
+      "summary": "Python standard library strictly preferred; subprocesses executed safely; secret redaction enforced.",
+      "evidence": [
+        "Zero external runtime third-party dependencies required",
+        "Subprocess invocations use explicit argument lists without shell=True",
+        "Archive extraction guarded against path traversal",
+        "All secret patterns redacted across report generators"
+      ],
+      "blockers": []
+    },
+    "gate_g_testing": {
+      "gate_id": "gate_g_testing",
+      "name": "Test Verification & Regression",
+      "status": "PASS",
+      "summary": "Comprehensive test coverage with disposable fixture repositories; zero test regressions.",
+      "evidence": [
+        "Phase 0 (Foundation): 2 tests passed",
+        "Phase 1 (Intelligence): 22 tests passed",
+        "Phase 2 (Maintenance): 41 tests passed",
+        "Phase 3 (Security & CI/CD): 70 tests passed",
+        "Phase 4 (Bounded Repair): 82 tests passed",
+        "Phase 5 (Git Workflow): 101 tests passed",
+        "Phase 6 (Compatibility & Integration): 109 tests passed"
+      ],
+      "blockers": []
+    },
+    "gate_h_documentation": {
+      "gate_id": "gate_h_documentation",
+      "name": "Documentation & Policies",
+      "status": "PASS",
+      "summary": "All policy documents synchronized with implementation; README, architecture, and skill files complete.",
+      "evidence": [
+        "README.md documents all 6 phases and user workflows",
+        "skill/SKILL.md defines orchestrator rules and status vocabulary",
+        "All 9 reference policy files present and up to date"
+      ],
+      "blockers": []
+    },
+    "gate_i_review": {
+      "gate_id": "gate_i_review",
+      "name": "Final Human-in-the-Loop Review",
+      "status": "PASS",
+      "summary": "Working tree verified; no unapproved commits or pushes; release candidate ready for maintainer tag.",
+      "evidence": [
+        "Development repository remains uncommitted per Gate E safety rules",
+        "No automated git commit/push performed on development repo",
+        "Release readiness confirmed without automated publication"
+      ],
+      "blockers": []
+    }
+  },
+  "unresolved_blockers": [
+    "Lifecycle handoff or schema validation failed"
+  ]
+}

@@ -1,0 +1,59 @@
+name: Release Candidate Verification
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_version:
+        description: "Release candidate version to verify"
+        required: true
+        default: "1.0.0-rc1"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify Release Candidate Packaging & Readiness
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Validate release gates
+        run: |
+          python skill/scripts/repocraft_release.py validate-release --json
+
+      - name: Verify package reproducibility and integrity
+        run: |
+          python -c "
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, str(Path('skill/scripts').resolve()))
+          from engine.release import ReproducibilityChecker, IntegrityVerifier, PackageBuilder
+          res = ReproducibilityChecker.check_reproducibility(Path('.'))
+          assert res.is_reproducible, f'Reproducibility failed: {res.differences}'
+          zip_p, manifest = PackageBuilder.build_zip(Path('.'), Path('dist'))
+          audit = IntegrityVerifier.verify_archive(zip_p, manifest)
+          assert audit.is_valid, f'Integrity check failed: {audit.errors}'
+          print('Package verification complete: byte-for-byte reproducible and integrity verified.')
+          "
+
+      - name: Generate release notes and announcement drafts
+        run: |
+          python skill/scripts/repocraft_release.py draft-release-notes --reports reports/
+
+      - name: Post-release maintenance health audit
+        run: |
+          python skill/scripts/repocraft_release.py generate-maintenance-report --reports reports/
+

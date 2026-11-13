@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test & Quality Checks (Python ${{ matrix.python-version }} on ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+        python-version: [ "3.9", "3.10", "3.11", "3.12" ]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Python syntax and compilation check
+        run: |
+          python -m compileall -q skill/ install.py
+
+      - name: Run installer contract tests
+        run: |
+          pytest -v tests/test_installer_contract.py
+
+      - name: Run Phase 1-5 test suites
+        run: |
+          pytest -v tests/test_repository_intelligence.py
+          pytest -v tests/test_maintenance_engine.py
+          pytest -v tests/test_security_engine.py
+          pytest -v tests/test_repair_engine.py
+          pytest -v tests/test_git_engine.py
+
+      - name: Run Phase 6 integration test suite
+        run: |
+          pytest -v tests/integration/
+
+      - name: Run Phase 7 distribution test suite
+        run: |
+          pytest -v tests/distribution/
+
+      - name: Verify release distribution package integrity
+        run: |
+          python skill/scripts/repocraft_release.py verify-distribution
+

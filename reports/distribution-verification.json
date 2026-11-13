@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "is_valid": true,
+  "status": "VALID",
+  "package_path": "C:\\Users\\sanja\\project\\RepoCraft\\dist\\repocraft-1.0.0-rc1.zip",
+  "archive_sha256": "44c3775c64a0e396d12d4d457230034fbb497436b9656d5c3a8543421207c145",
+  "files_count": 126,
+  "total_bytes": 872381,
+  "path_traversal_safe": true,
+  "integrity_valid": true,
+  "secret_scan_valid": true,
+  "errors": [],
+  "warnings": []
+}

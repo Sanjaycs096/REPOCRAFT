@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "timestamp": "2026-11-13T17:47:35.719199+00:00",
+  "repocraft_version": "1.0.0-rc1",
+  "overall_status": "PASS",
+  "tests_run": 3,
+  "results": [
+    {
+      "test_type": "clean_installation",
+      "is_valid": true,
+      "target_path": "C:\\Users\\sanja\\AppData\\Local\\Temp\\tmp0knxflck\\test_project",
+      "files_installed": 268,
+      "manifest_present": true,
+      "manifest_hashes_valid": true,
+      "user_files_preserved": true,
+      "backup_verified": false,
+      "rollback_verified": false,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "test_type": "existing_user_files_protection",
+      "is_valid": true,
+      "target_path": "C:\\Users\\sanja\\AppData\\Local\\Temp\\tmpqsla8soi\\user_project",
+      "files_installed": 268,
+      "manifest_present": true,
+      "manifest_hashes_valid": true,
+      "user_files_preserved": true,
+      "backup_verified": false,
+      "rollback_verified": false,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "test_type": "overwrite_protection_and_backup",
+      "is_valid": true,
+      "target_path": "C:\\Users\\sanja\\AppData\\Local\\Temp\\tmphexrcg7e\\existing_skill_project",
+      "files_installed": 268,
+      "manifest_present": true,
+      "manifest_hashes_valid": true,
+      "user_files_preserved": true,
+      "backup_verified": true,
+      "rollback_verified": false,
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

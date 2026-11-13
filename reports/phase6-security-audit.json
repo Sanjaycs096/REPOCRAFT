@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "repocraft_version": "1.0.0-rc1",
+  "generated_at": "2026-11-13T17:10:17.115878+00:00",
+  "repository_root": "C:\\Users\\sanja\\project\\RepoCraft",
+  "audit_status": "PASS",
+  "total_findings": 2,
+  "findings": [
+    {
+      "id": "SEC-001-PASS",
+      "severity": "INFO",
+      "path": "skill/scripts/**/*.py",
+      "description": "Zero unauthorized shell=True subprocess calls detected across all engine scripts.",
+      "action": "Maintain shell=False invariant."
+    },
+    {
+      "id": "SEC-003",
+      "severity": "INFO",
+      "path": "skill/scripts/",
+      "description": "100% Python standard library runtime verified. Zero external supply-chain attack vectors.",
+      "action": "Maintain standard library only architecture."
+    }
+  ],
+  "dependency_count": 0,
+  "subprocess_safety": "STRICT_LIST_ONLY"
+}

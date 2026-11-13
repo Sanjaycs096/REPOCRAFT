@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "repocraft_version": "1.0.0-rc1",
+  "generated_at": "2026-11-13T17:10:15.137756+00:00",
+  "target_root": "C:\\Users\\sanja\\project\\RepoCraft",
+  "detected_agent": {
+    "detected_agent": null,
+    "confidence": 0.0,
+    "indicator_paths": [],
+    "environment_variables": [],
+    "notes": "No recognized coding agent directories or markers detected."
+  },
+  "capability_matrix": {
+    "schema_version": "1.0.0",
+    "capabilities_defined": [
+      "installation",
+      "skill_discovery",
+      "frontmatter_parsing",
+      "cli_execution",
+      "approval_handling",
+      "full_lifecycle",
+      "headless_certified"
+    ],
+    "capability_descriptions": {
+      "installation": "Clean installation via install.py",
+      "skill_discovery": "Automatic agent skill discovery",
+      "frontmatter_parsing": "YAML frontmatter parsing",
+      "cli_execution": "Subprocess / CLI script execution",
+      "approval_handling": "Human-in-the-loop approval gate support",
+      "full_lifecycle": "Certified full multi-phase lifecycle",
+      "headless_certified": "Headless automated execution certification"
+    },
+    "agents": {
+      "antigravity": {
+        "display_name": "Google Antigravity",
+        "support_level": "SUPPORTED",
+        "skill_dir": ".agent/skills/repocraft",
+        "validation_status": "CERTIFIED",
+        "capabilities": {
+          "installation": true,
+          "skill_discovery": true,
+          "frontmatter_parsing": true,
+          "cli_execution": true,
+          "approval_handling": true,
+          "full_lifecycle": true,
+          "headless_certified": true
+        },
+        "limitations": [
+          "Requires Python >=3.9 installed in the environment for executing runtime scripts."
+        ],
+        "evidence": [
+          "Standard .agent/skills/ directory layout verified by installer contract tests.",
+          "YAML frontmatter in skill/SKILL.md conforms to Antigravity skill specification.",
+          "Full lifecycle execution verified across Phase 0-5 test suites."
+        ]
+      },
+      "claude-code": {
+        "display_name": "Claude Code (Anthropic)",
+        "support_level": "INSTALLATION_ONLY",
+        "skill_dir": ".claude/skills/repocraft",
+        "validation_status": "INSTALLATION_VERIFIED_INVOCATION_UNVERIFIED",
+        "capabilities": {
+          "installation": true,
+          "skill_discovery": false,
+          "frontmatter_parsing": false,
+          "cli_execution": true,
+          "approval_handling": true,
+          "full_lifecycle": false,
+          "headless_certified": false
+        },
+        "limitations": [
+          "Claude Code automated skill discovery and headless invocation protocol are unverified.",
+          "Requires manual user prompting and terminal execution verification.",
+          "Autonomous multi-phase pipeline is not certified for headless invocation."
+        ],
+        "evidence": [
+          "install.py provides configured target for .claude/skills/repocraft.",
+          "File placement and file integrity verified by installer tests.",
+          "Invocation protocol not tested in certified headless test harness."
+        ]
+      },
+      "cursor": {
+        "display_name": "Cursor IDE",
+        "support_level": "MANUAL_CONFIGURATION_REQUIRED",
+        "skill_dir": ".cursor/rules/repocraft.mdc",
+        "validation_status": "NOT_CERTIFIED",
+        "capabilities": {
+          "installation": false,
+          "skill_discovery": false,
+          "frontmatter_parsing": false,
+          "cli_execution": true,
+          "approval_handling": true,
+          "full_lifecycle": false,
+          "headless_certified": false
+        },
+        "limitations": [
+          "Cursor uses .cursorrules or .cursor/rules/*.mdc conventions rather than .agent/skills directory tree.",
+          "Requires manual adapter file creation."
+        ],
+        "evidence": [
+          "CLI scripts can be executed manually in Cursor built-in terminal."
+        ]
+      },
+      "gemini-cli": {
+        "display_name": "Gemini CLI",
+        "support_level": "NOT_TESTED",
+        "skill_dir": ".gemini/skills/repocraft",
+        "validation_status": "UNTESTED",
+        "capabilities": {
+          "installation": false,
+          "skill_discovery": false,
+          "frontmatter_parsing": false,
+          "cli_execution": false,
+          "approval_handling": false,
+          "full_lifecycle": false,
+          "headless_certified": false
+        },
+        "limitations": [
+          "No official skill discovery convention or test harness available."
+        ],
+        "evidence": []
+      },
+      "project": {
+        "display_name": "Project-Local Standalone (Generic)",
+        "support_level": "MANUAL_CONFIGURATION_REQUIRED",
+        "skill_dir": ".repocraft/skill",
+        "validation_status": "VERIFIED_STANDALONE",
+        "capabilities": {
+          "installation": true,
+          "skill_discovery": false,
+          "frontmatter_parsing": false,
+          "cli_execution": true,
+          "approval_handling": true,
+          "full_lifecycle": false,
+          "headless_certified": false
+        },
+        "limitations": [
+          "Does not integrate with agent-specific skill discovery protocols; requires manual invocation."
+        ],
+        "evidence": [
+          "install.py provides configured target for .repocraft/skill.",
+          "Installer integrity verified by contract tests."
+        ]
+      }
+    }
+  },
+  "validation_results": {
+    "antigravity": {
+      "agent_id": "antigravity",
+      "support_level": "SUPPORTED",
+      "is_valid": false,
+      "errors": [
+        "Skill directory does not exist: C:\\Users\\sanja\\project\\RepoCraft\\.agent\\skills\\repocraft"
+      ],
+      "warnings": [],
+      "evidence": [],
+      "checked_paths": [
+        "C:\\Users\\sanja\\project\\RepoCraft\\.agent\\skills\\repocraft"
+      ],
+      "capability_scores": {
+        "installation": false
+      }
+    },
+    "claude-code": {
+      "agent_id": "claude-code",
+      "support_level": "INSTALLATION_ONLY",
+      "is_valid": false,
+      "errors": [
+        "Skill directory does not exist: C:\\Users\\sanja\\project\\RepoCraft\\.claude\\skills\\repocraft"
+      ],
+      "warnings": [],
+      "evidence": [],
+      "checked_paths": [
+        "C:\\Users\\sanja\\project\\RepoCraft\\.claude\\skills\\repocraft"
+      ],
+      "capability_scores": {
+        "installation": false
+      }
+    },
+    "cursor": {
+      "agent_id": "cursor",
+      "support_level": "MANUAL_CONFIGURATION_REQUIRED",
+      "is_valid": false,
+      "errors": [
+        "Skill directory does not exist: C:\\Users\\sanja\\project\\RepoCraft\\.cursor\\rules\\repocraft.mdc"
+      ],
+      "warnings": [],
+      "evidence": [],
+      "checked_paths": [
+        "C:\\Users\\sanja\\project\\RepoCraft\\.cursor\\rules\\repocraft.mdc"
+      ],
+      "capability_scores": {
+        "installation": false
+      }
+    },
+    "gemini-cli": {
+      "agent_id": "gemini-cli",
+      "support_level": "NOT_TESTED",
+      "is_valid": false,
+      "errors": [
+        "Skill directory does not exist: C:\\Users\\sanja\\project\\RepoCraft\\.gemini\\skills\\repocraft"
+      ],
+      "warnings": [],
+      "evidence": [],
+      "checked_paths": [
+        "C:\\Users\\sanja\\project\\RepoCraft\\.gemini\\skills\\repocraft"
+      ],
+      "capability_scores": {
+        "installation": false
+      }
+    },
+    "project": {
+      "agent_id": "project",
+      "support_level": "MANUAL_CONFIGURATION_REQUIRED",
+      "is_valid": false,
+      "errors": [
+        "Skill directory does not exist: C:\\Users\\sanja\\project\\RepoCraft\\.repocraft\\skill"
+      ],
+      "warnings": [],
+      "evidence": [],
+      "checked_paths": [
+        "C:\\Users\\sanja\\project\\RepoCraft\\.repocraft\\skill"
+      ],
+      "capability_scores": {
+        "installation": false
+      }
+    }
+  },
+  "status": "VALIDATED",
+  "errors": [],
+  "warnings": []
+}
