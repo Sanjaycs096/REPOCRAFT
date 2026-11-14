@@ -17,6 +17,41 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+# Reconfigure standard streams to UTF-8 with replacement for Windows / non-UTF-8 consoles
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
+def safe_print(*args, sep: str = " ", end: str = "\n", file=None, flush: bool = False, **kwargs) -> None:
+    """Print text safely across platforms without raising UnicodeEncodeError."""
+    target_file = file or sys.stdout
+    text = sep.join(str(a) for a in args) + end
+    try:
+        target_file.write(text)
+    except UnicodeEncodeError:
+        enc = getattr(target_file, "encoding", None) or "ascii"
+        safe_text = text.encode(enc, errors="backslashreplace").decode(enc, errors="replace")
+        target_file.write(safe_text)
+    if flush:
+        target_file.flush()
+
+
+def _get_icons() -> tuple[str, str]:
+    enc = getattr(sys.stdout, "encoding", None) or "utf-8"
+    try:
+        "✅".encode(enc)
+        return "✅", "❌"
+    except Exception:
+        return "[PASS]", "[FAIL]"
+
 from engine.distribution import (
     AnnouncementGenerator,
     DistributionOrchestrator,
@@ -82,12 +117,13 @@ def cmd_validate_release(args: argparse.Namespace) -> int:
         (out_dir / "release-validation.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
 
     if args.json:
-        print(json.dumps(result, indent=2))
+        safe_print(json.dumps(result, indent=2))
     else:
-        print(f"Release Candidate Status: {status.value}")
+        pass_icon, fail_icon = _get_icons()
+        safe_print(f"Release Candidate Status: {status.value}")
         for g_id, g in gates.items():
-            icon = "✅" if g.status.value == "PASS" else "❌"
-            print(f"  {icon} {g.name}: {g.summary}")
+            icon = pass_icon if g.status.value == "PASS" else fail_icon
+            safe_print(f"  {icon} {g.name}: {g.summary}")
     return 0 if status.value in ("READY_FOR_RELEASE", "READY_WITH_LIMITATIONS") else 1
 
 
@@ -104,7 +140,7 @@ def cmd_draft_release_notes(args: argparse.Namespace) -> int:
         (out_dir / "release-notes-draft.md").write_text(md_notes, encoding="utf-8")
         (out_dir / "release-announcement-draft.md").write_text(announcement, encoding="utf-8")
         if not args.json:
-            print(f"Drafts written to: {out_dir}")
+            safe_print(f"Drafts written to: {out_dir}")
 
     if args.json:
         payload = {
@@ -114,9 +150,9 @@ def cmd_draft_release_notes(args: argparse.Namespace) -> int:
             "release_notes_md": md_notes,
             "announcement_md": announcement,
         }
-        print(json.dumps(payload, indent=2))
+        safe_print(json.dumps(payload, indent=2))
     elif not args.reports:
-        print(md_notes)
+        safe_print(md_notes)
     return 0
 
 
@@ -134,18 +170,19 @@ def cmd_verify_distribution(args: argparse.Namespace) -> int:
         )
 
     if args.json:
-        print(json.dumps(res.to_dict(), indent=2))
+        safe_print(json.dumps(res.to_dict(), indent=2))
     else:
-        status_icon = "✅" if res.is_valid else "❌"
-        print(f"{status_icon} Distribution Check: {res.status.value}")
-        print(f"Archive:    {res.package_path}")
-        print(f"SHA-256:    {res.archive_sha256}")
-        print(f"Size:       {res.total_bytes} bytes")
-        print(f"Traversal Safe: {res.path_traversal_safe}")
-        print(f"Secret Scan:    {res.secret_scan_valid}")
+        pass_icon, fail_icon = _get_icons()
+        status_icon = pass_icon if res.is_valid else fail_icon
+        safe_print(f"{status_icon} Distribution Check: {res.status.value}")
+        safe_print(f"Archive:    {res.package_path}")
+        safe_print(f"SHA-256:    {res.archive_sha256}")
+        safe_print(f"Size:       {res.total_bytes} bytes")
+        safe_print(f"Traversal Safe: {res.path_traversal_safe}")
+        safe_print(f"Secret Scan:    {res.secret_scan_valid}")
         if res.errors:
             for err in res.errors:
-                print(f"  ❌ {err}")
+                safe_print(f"  {fail_icon} {err}")
     return 0 if res.is_valid else 1
 
 
@@ -165,12 +202,13 @@ def cmd_test_installation(args: argparse.Namespace) -> int:
         )
 
     if args.json:
-        print(json.dumps({r.test_type: r.to_dict() for r in results}, indent=2))
+        safe_print(json.dumps({r.test_type: r.to_dict() for r in results}, indent=2))
     else:
-        print(f"Installation Tests Run: {len(results)}")
+        pass_icon, fail_icon = _get_icons()
+        safe_print(f"Installation Tests Run: {len(results)}")
         for r in results:
-            icon = "✅" if r.is_valid else "❌"
-            print(f"  {icon} {r.test_type}: Valid={r.is_valid}")
+            icon = pass_icon if r.is_valid else fail_icon
+            safe_print(f"  {icon} {r.test_type}: Valid={r.is_valid}")
     return 0 if all_ok else 1
 
 
@@ -189,14 +227,14 @@ def cmd_plan_upgrade(args: argparse.Namespace) -> int:
         )
 
     if args.json:
-        print(json.dumps(plan.to_dict(), indent=2))
+        safe_print(json.dumps(plan.to_dict(), indent=2))
     else:
-        print(f"Upgrade Status:   {plan.upgrade_status.value}")
-        print(f"Installed Version: {plan.current_version or 'None'}")
-        print(f"Target Version:    {plan.candidate_version}")
-        print(f"Files to Add:      {len(plan.files_to_add)}")
-        print(f"Files to Update:   {len(plan.files_to_update)}")
-        print(f"Files to Remove:   {len(plan.files_to_remove)}")
+        safe_print(f"Upgrade Status:   {plan.upgrade_status.value}")
+        safe_print(f"Installed Version: {plan.current_version or 'None'}")
+        safe_print(f"Target Version:    {plan.candidate_version}")
+        safe_print(f"Files to Add:      {len(plan.files_to_add)}")
+        safe_print(f"Files to Update:   {len(plan.files_to_update)}")
+        safe_print(f"Files to Remove:   {len(plan.files_to_remove)}")
     return 0
 
 
@@ -212,17 +250,18 @@ def cmd_generate_maintenance_report(args: argparse.Namespace) -> int:
             json.dumps(report.to_dict(), indent=2), encoding="utf-8"
         )
         if not args.json:
-            print(f"Maintenance report written to {out_dir / 'maintenance-report.json'}")
+            safe_print(f"Maintenance report written to {out_dir / 'maintenance-report.json'}")
 
     if args.json:
-        print(json.dumps(report.to_dict(), indent=2))
+        safe_print(json.dumps(report.to_dict(), indent=2))
     elif not args.reports:
-        icon = "✅" if report.installation_healthy else "❌"
-        print(f"{icon} Maintenance Audit: Health={report.installation_healthy}")
-        print(f"Manifests Consistent: {report.manifests_consistent}")
-        print(f"Policies Intact:      {report.policy_files_intact}")
-        print(f"CLI Drivers Intact:   {report.cli_drivers_intact}")
-        print(f"Zero Telemetry:       {report.zero_telemetry_guarantee}")
+        pass_icon, fail_icon = _get_icons()
+        icon = pass_icon if report.installation_healthy else fail_icon
+        safe_print(f"{icon} Maintenance Audit: Health={report.installation_healthy}")
+        safe_print(f"Manifests Consistent: {report.manifests_consistent}")
+        safe_print(f"Policies Intact:      {report.policy_files_intact}")
+        safe_print(f"CLI Drivers Intact:   {report.cli_drivers_intact}")
+        safe_print(f"Zero Telemetry:       {report.zero_telemetry_guarantee}")
     return 0 if report.installation_healthy else 1
 
 

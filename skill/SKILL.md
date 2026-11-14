@@ -138,6 +138,12 @@ Treat this as authorization for safe, reversible, in-scope work—not permission
 - Audit post-release health, manifest consistency, and zero-telemetry AST: `generate-maintenance-report`.
 - Emit all 8 Phase 7 artifacts outside the target project: `release-validation.json`, `release-notes-draft.md`, `release-announcement-draft.md`, `distribution-verification.json`, `installation-acceptance.json`, `upgrade-validation.json`, `maintenance-report.json`, and `phase7-report.md`.
 
+### Self-Verification Gate — Repository Self-Audit
+- Execute read-only repository self-check before trusting RepoCraft on external projects:
+  `python <skill-path>/scripts/repocraft_selfcheck.py --target . --output reports/self-verification/`
+- Validates repository root, module completeness, reference policies, lifecycle DAG handoffs, approval boundary isolation, package integrity, package reproducibility, disposable fixture acceptance, upgrade/rollback integrity, and cross-platform CI matrix consistency.
+- Emits: `self-verification.json`, `self-verification.md`, `phase-traceability.json`, `phase-traceability.md`, `ci-compatibility-report.md`, and `release-readiness-report.md`.
+
 ## Status vocabulary
 
 Every quality gate must use exactly one of:

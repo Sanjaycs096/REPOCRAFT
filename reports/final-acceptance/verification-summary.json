@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-14T17:23:10.406849+00:00",
+  "final_status": "REPOCRAFT_VERIFIED_WITH_LIMITATIONS",
+  "status_rationale": "All 12 self-verification gates pass, 486/486 automated tests pass, and release package is 100% synchronized with source files. Status is limited solely because remote GitHub Actions hosted CI execution remains pending maintainer push.",
+  "repository": {
+    "path": "C:\\Users\\sanja\\project\\RepoCraft",
+    "branch": "main",
+    "head_commit": "3d7ac0e",
+    "remote_url": "https://github.com/Sanjaycs096/REPOCRAFT.git"
+  },
+  "automated_tests": {
+    "total_collected": 486,
+    "passed": 486,
+    "failed": 0,
+    "pass_rate_percent": 100.0,
+    "test_suites": {
+      "unit_phase1_to_5": 316,
+      "installer_contract_and_portability": 12,
+      "encoding_resiliency": 11,
+      "gate12_selfcheck_contract": 7,
+      "multirepo_fixtures": 12,
+      "distribution_engine": 29,
+      "integration_lifecycle_and_package": 99
+    }
+  },
+  "self_verification_gates": {
+    "total_gates": 12,
+    "passed": 12,
+    "failed": 0,
+    "not_run": 0,
+    "gates_evaluated": [
+      "GATE_01_GIT_BASELINE",
+      "GATE_02_MODULE_COMPLETENESS",
+      "GATE_03_POLICY_GOVERNANCE",
+      "GATE_04_LIFECYCLE_HANDOFFS",
+      "GATE_05_APPROVAL_BOUNDARIES",
+      "GATE_06_DISTRIBUTION_INTEGRITY",
+      "GATE_07_PACKAGE_REPRODUCIBILITY",
+      "GATE_08_ISOLATED_FIXTURE_ACCEPTANCE",
+      "GATE_09_UPGRADE_AND_ROLLBACK",
+      "GATE_10_CI_MATRIX_CONSISTENCY",
+      "GATE_11_CLAIM_AUDIT",
+      "GATE_12_AUTOMATED_TESTS"
+    ]
+  },
+  "package_integrity": {
+    "archive_path": "dist/repocraft-1.0.0-rc1.zip",
+    "archive_sha256": "04884637cb4f6921fcc557e47df70ff920f9aa7c39dfd05fe544d0f05951b1fa",
+    "total_entries": 143,
+    "size_bytes": 1057246,
+    "path_traversal_safe": true,
+    "secret_scan_valid": true,
+    "byte_for_byte_reproducible": true,
+    "status": "VALID",
+    "source_sync_status": "ALL_143_FILES_MATCH_SOURCE"
+  },
+  "platform_verification_matrix": {
+    "local_windows_11_py310": "PASS (486 tests passed)",
+    "hosted_ubuntu_2204_py39": "PENDING_HOSTED_CI",
+    "hosted_ubuntu_latest_py310": "PENDING_HOSTED_CI",
+    "hosted_ubuntu_latest_py311": "PENDING_HOSTED_CI",
+    "hosted_ubuntu_latest_py312": "PENDING_HOSTED_CI",
+    "hosted_windows_latest_py39": "PENDING_HOSTED_CI",
+    "hosted_windows_latest_py310": "PENDING_HOSTED_CI",
+    "hosted_windows_latest_py311": "PENDING_HOSTED_CI",
+    "hosted_windows_latest_py312": "PENDING_HOSTED_CI"
+  }
+}

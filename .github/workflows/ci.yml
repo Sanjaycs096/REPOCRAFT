@@ -16,8 +16,29 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
-        python-version: [ "3.9", "3.10", "3.11", "3.12" ]
+        include:
+          # Linux (Ubuntu) matrix: explicit ubuntu-22.04 for Python 3.9 (Ubuntu 26.04 toolcache lacks Python 3.9), ubuntu-latest for 3.10-3.12
+          - os: ubuntu-22.04
+            python-version: "3.9"
+          - os: ubuntu-latest
+            python-version: "3.10"
+          - os: ubuntu-latest
+            python-version: "3.11"
+          - os: ubuntu-latest
+            python-version: "3.12"
+          # Windows matrix
+          - os: windows-latest
+            python-version: "3.9"
+          - os: windows-latest
+            python-version: "3.10"
+          - os: windows-latest
+            python-version: "3.11"
+          - os: windows-latest
+            python-version: "3.12"
+
+    env:
+      PYTHONIOENCODING: "utf-8"
+      PYTHONUTF8: "1"
 
     steps:
       - name: Check out repository
@@ -35,7 +56,7 @@ jobs:
 
       - name: Python syntax and compilation check
         run: |
-          python -m compileall -q skill/ install.py
+          python -m compileall -q skill/ install.py tests/
 
       - name: Run installer contract tests
         run: |
