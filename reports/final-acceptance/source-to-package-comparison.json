@@ -1,0 +1,870 @@
+{
+  "archive_path": "C:\\Users\\sanja\\project\\RepoCraft\\dist\\repocraft-1.0.0-rc1.zip",
+  "archive_sha256": "04884637cb4f6921fcc557e47df70ff920f9aa7c39dfd05fe544d0f05951b1fa",
+  "archive_size_bytes": 1057246,
+  "total_entries": 143,
+  "files_matching": 143,
+  "files_mismatched": 0,
+  "files_missing_in_source": [],
+  "files_missing_in_archive": [],
+  "entries": {
+    "LICENSE": {
+      "archive_sha256": "5b099384ebd1d6f3431ac21381409a203cf8028d8e50d1b6b6f274b3c1c466f2",
+      "source_sha256": "5b099384ebd1d6f3431ac21381409a203cf8028d8e50d1b6b6f274b3c1c466f2",
+      "matches": true,
+      "size_bytes": 1091
+    },
+    "MANIFEST.json": {
+      "archive_sha256": "504607fb9b71c8450b71f85cd1748dda5a1b95b7a8bd0af5b55cdd939258f536",
+      "source_sha256": "504607fb9b71c8450b71f85cd1748dda5a1b95b7a8bd0af5b55cdd939258f536",
+      "matches": true,
+      "size_bytes": 1052
+    },
+    "README.md": {
+      "archive_sha256": "83876bcd5a15dc1c9f2412f71b60b3489afde6a210cfb3386d5660c6e3507af2",
+      "source_sha256": "83876bcd5a15dc1c9f2412f71b60b3489afde6a210cfb3386d5660c6e3507af2",
+      "matches": true,
+      "size_bytes": 25260
+    },
+    "adapters/README.md": {
+      "archive_sha256": "f9b42655b38cd88065b2351941d124d8f475c8769074d32b532ff9c016eba832",
+      "source_sha256": "f9b42655b38cd88065b2351941d124d8f475c8769074d32b532ff9c016eba832",
+      "matches": true,
+      "size_bytes": 566
+    },
+    "docs/CONTRIBUTING.md": {
+      "archive_sha256": "9a38de19decce6b5eb448bcd1fca53bd726c409608e217efd7af70c07489d21e",
+      "source_sha256": "9a38de19decce6b5eb448bcd1fca53bd726c409608e217efd7af70c07489d21e",
+      "matches": true,
+      "size_bytes": 6369
+    },
+    "docs/PRODUCT-ARCHITECTURE.md": {
+      "archive_sha256": "ec5e401602d32a955310bf6def90363e1c3caf876a01f960fe6ba43e549accaf",
+      "source_sha256": "ec5e401602d32a955310bf6def90363e1c3caf876a01f960fe6ba43e549accaf",
+      "matches": true,
+      "size_bytes": 22299
+    },
+    "docs/RELEASE-PROCESS.md": {
+      "archive_sha256": "636f3786635ca905ef4daf7d2509ffb3eac977bf792a834a253f1a4db8d685a3",
+      "source_sha256": "636f3786635ca905ef4daf7d2509ffb3eac977bf792a834a253f1a4db8d685a3",
+      "matches": true,
+      "size_bytes": 4958
+    },
+    "docs/SECURITY.md": {
+      "archive_sha256": "fb282591b4362a992e7a004568c0258f357f81f75546ac7e923f85f350433c59",
+      "source_sha256": "fb282591b4362a992e7a004568c0258f357f81f75546ac7e923f85f350433c59",
+      "matches": true,
+      "size_bytes": 4284
+    },
+    "docs/UPGRADE-AND-ROLLBACK.md": {
+      "archive_sha256": "a5f58cf9e15601f14016c858662ec7a2a175b4f3ea3bb11fa70eddfc0ac544f5",
+      "source_sha256": "a5f58cf9e15601f14016c858662ec7a2a175b4f3ea3bb11fa70eddfc0ac544f5",
+      "matches": true,
+      "size_bytes": 5851
+    },
+    "docs/USER-GUIDE.md": {
+      "archive_sha256": "88ffe6a808963ad7454e159de2951daf62334bdcc9d6dc3f9062a4be4e3da5a9",
+      "source_sha256": "88ffe6a808963ad7454e159de2951daf62334bdcc9d6dc3f9062a4be4e3da5a9",
+      "matches": true,
+      "size_bytes": 6158
+    },
+    "install.py": {
+      "archive_sha256": "683a89367bdcfddb3ab21023ff07f1817063a7e33ec9747223f3d165b3f97c5e",
+      "source_sha256": "683a89367bdcfddb3ab21023ff07f1817063a7e33ec9747223f3d165b3f97c5e",
+      "matches": true,
+      "size_bytes": 8816
+    },
+    "pyproject.toml": {
+      "archive_sha256": "1c4c3c34f9b53fa976af146fe49af3e91f3d3e0576de6fbb2669eea52855011d",
+      "source_sha256": "1c4c3c34f9b53fa976af146fe49af3e91f3d3e0576de6fbb2669eea52855011d",
+      "matches": true,
+      "size_bytes": 305
+    },
+    "skill/SKILL.md": {
+      "archive_sha256": "c5c7625fca9d39bae9bc67db317233f6253989bac18faa6480e5f110de36de9e",
+      "source_sha256": "c5c7625fca9d39bae9bc67db317233f6253989bac18faa6480e5f110de36de9e",
+      "matches": true,
+      "size_bytes": 16024
+    },
+    "skill/references/agent-compatibility.md": {
+      "archive_sha256": "bde622cab20381245af3ec69ed30113ac2660d1bba18d1714f15be6eec73d7be",
+      "source_sha256": "bde622cab20381245af3ec69ed30113ac2660d1bba18d1714f15be6eec73d7be",
+      "matches": true,
+      "size_bytes": 3732
+    },
+    "skill/references/documentation-policy.md": {
+      "archive_sha256": "bd614f149dce64a61dd9793625487f75e09333221df575b097790b428eacda7b",
+      "source_sha256": "bd614f149dce64a61dd9793625487f75e09333221df575b097790b428eacda7b",
+      "matches": true,
+      "size_bytes": 2145
+    },
+    "skill/references/git-workflow-policy.md": {
+      "archive_sha256": "ad2b0659f1b7b6930540ea3c12c8a93d1cf3c918469e6025552c2e703fe39bc5",
+      "source_sha256": "ad2b0659f1b7b6930540ea3c12c8a93d1cf3c918469e6025552c2e703fe39bc5",
+      "matches": true,
+      "size_bytes": 7314
+    },
+    "skill/references/github-presentation-policy.md": {
+      "archive_sha256": "46c71dd93fe8f637fe5539b0e5de821a13a1f1e0557a743fd3159b87417425d9",
+      "source_sha256": "46c71dd93fe8f637fe5539b0e5de821a13a1f1e0557a743fd3159b87417425d9",
+      "matches": true,
+      "size_bytes": 1679
+    },
+    "skill/references/maintenance-policy.md": {
+      "archive_sha256": "88831559f8d966a80790df9878310ae12f8566789692ac0391291ae9c090e203",
+      "source_sha256": "88831559f8d966a80790df9878310ae12f8566789692ac0391291ae9c090e203",
+      "matches": true,
+      "size_bytes": 2474
+    },
+    "skill/references/quality-gates.md": {
+      "archive_sha256": "bf6de7384a619257ebb4aa4a4eef487485296f7d8f9867bfc5fd0768459c618e",
+      "source_sha256": "bf6de7384a619257ebb4aa4a4eef487485296f7d8f9867bfc5fd0768459c618e",
+      "matches": true,
+      "size_bytes": 821
+    },
+    "skill/references/release-and-portability-policy.md": {
+      "archive_sha256": "529eee87b37a4e3f6db872566e311cd20fcf1cd1a28e0cda8b60421912042171",
+      "source_sha256": "529eee87b37a4e3f6db872566e311cd20fcf1cd1a28e0cda8b60421912042171",
+      "matches": true,
+      "size_bytes": 4938
+    },
+    "skill/references/repair-and-regression-policy.md": {
+      "archive_sha256": "b60d29eaf9a18e65bf8f095ba5db0e45050090c9ee582e1eaf900a392a9ffefe",
+      "source_sha256": "b60d29eaf9a18e65bf8f095ba5db0e45050090c9ee582e1eaf900a392a9ffefe",
+      "matches": true,
+      "size_bytes": 6393
+    },
+    "skill/references/repository-intelligence.md": {
+      "archive_sha256": "47724e6faa5cf8d1615caf5ef3a8cad0cbcd3251ea9bf305514b635787f604bb",
+      "source_sha256": "47724e6faa5cf8d1615caf5ef3a8cad0cbcd3251ea9bf305514b635787f604bb",
+      "matches": true,
+      "size_bytes": 4710
+    },
+    "skill/references/safety-and-git-baseline.md": {
+      "archive_sha256": "1966ec935d667dc16f41f8d703eb5a3ff2cf133b7284b8cfa83ceed3fded10d2",
+      "source_sha256": "1966ec935d667dc16f41f8d703eb5a3ff2cf133b7284b8cfa83ceed3fded10d2",
+      "matches": true,
+      "size_bytes": 1586
+    },
+    "skill/references/security-testing-policy.md": {
+      "archive_sha256": "92c3c6a234a86e4907217d2652b1ce38b2102e5530ed37b3fbb0e301ffe0e047",
+      "source_sha256": "92c3c6a234a86e4907217d2652b1ce38b2102e5530ed37b3fbb0e301ffe0e047",
+      "matches": true,
+      "size_bytes": 4440
+    },
+    "skill/scripts/engine/__init__.py": {
+      "archive_sha256": "dcb77d322837294de0f107ae3b9d21cff32bd759407ad7e980ef51fe18e4f181",
+      "source_sha256": "dcb77d322837294de0f107ae3b9d21cff32bd759407ad7e980ef51fe18e4f181",
+      "matches": true,
+      "size_bytes": 647
+    },
+    "skill/scripts/engine/architecture.py": {
+      "archive_sha256": "bf0481063ffd3b805614ecdd6430ed472ebc9c8297a26d8a69d4c20be378831c",
+      "source_sha256": "bf0481063ffd3b805614ecdd6430ed472ebc9c8297a26d8a69d4c20be378831c",
+      "matches": true,
+      "size_bytes": 21934
+    },
+    "skill/scripts/engine/compatibility/__init__.py": {
+      "archive_sha256": "9b01c86ffb7d9fb840ceef6e449ecd47e443767ec93181ac74136a011e8beacb",
+      "source_sha256": "9b01c86ffb7d9fb840ceef6e449ecd47e443767ec93181ac74136a011e8beacb",
+      "matches": true,
+      "size_bytes": 958
+    },
+    "skill/scripts/engine/compatibility/agent_detector.py": {
+      "archive_sha256": "112296a6f0bc666124dd279308ecd5e4aa9efb26e6e93e6d7ac9460522dc9761",
+      "source_sha256": "112296a6f0bc666124dd279308ecd5e4aa9efb26e6e93e6d7ac9460522dc9761",
+      "matches": true,
+      "size_bytes": 4832
+    },
+    "skill/scripts/engine/compatibility/agent_registry.py": {
+      "archive_sha256": "6b17ddae94d0c5b3f7d5d39b1cf393d10809f1ee3e055a9b844190cf17943176",
+      "source_sha256": "6b17ddae94d0c5b3f7d5d39b1cf393d10809f1ee3e055a9b844190cf17943176",
+      "matches": true,
+      "size_bytes": 6701
+    },
+    "skill/scripts/engine/compatibility/capability_matrix.py": {
+      "archive_sha256": "47fef66c1c9a584789631c608256304e4dff8b07faf108dfb043daa7ea381d87",
+      "source_sha256": "47fef66c1c9a584789631c608256304e4dff8b07faf108dfb043daa7ea381d87",
+      "matches": true,
+      "size_bytes": 4780
+    },
+    "skill/scripts/engine/compatibility/compatibility_report.py": {
+      "archive_sha256": "e984940ed31366fe803ab0459a6f19a38a9d459f363717c903b0b310f2d0f364",
+      "source_sha256": "e984940ed31366fe803ab0459a6f19a38a9d459f363717c903b0b310f2d0f364",
+      "matches": true,
+      "size_bytes": 6979
+    },
+    "skill/scripts/engine/compatibility/compatibility_types.py": {
+      "archive_sha256": "1021c03cfb44d6f22e16d78145634238c6ddb58c4b89de779a04a8a555688b05",
+      "source_sha256": "1021c03cfb44d6f22e16d78145634238c6ddb58c4b89de779a04a8a555688b05",
+      "matches": true,
+      "size_bytes": 3818
+    },
+    "skill/scripts/engine/compatibility/compatibility_validator.py": {
+      "archive_sha256": "e33f488d208c93141f05d68b56423d71341aaa132ef7ce4fab83ed0ce8b3f986",
+      "source_sha256": "e33f488d208c93141f05d68b56423d71341aaa132ef7ce4fab83ed0ce8b3f986",
+      "matches": true,
+      "size_bytes": 6243
+    },
+    "skill/scripts/engine/compatibility/installation_adapter.py": {
+      "archive_sha256": "99091e87f9f68710b1c18ea5c68aa8641e6ee079c1f7829c1fb4b1ae671884a2",
+      "source_sha256": "99091e87f9f68710b1c18ea5c68aa8641e6ee079c1f7829c1fb4b1ae671884a2",
+      "matches": true,
+      "size_bytes": 3263
+    },
+    "skill/scripts/engine/compatibility/invocation_adapter.py": {
+      "archive_sha256": "3ebd27df00c77401543779e96fe737ec0462cddf40b872c1154a1274e073039e",
+      "source_sha256": "3ebd27df00c77401543779e96fe737ec0462cddf40b872c1154a1274e073039e",
+      "matches": true,
+      "size_bytes": 2953
+    },
+    "skill/scripts/engine/discovery.py": {
+      "archive_sha256": "4b6ea3f641c7c7b9b5123b90ebeb6a79ba10b7f7499897a0f0bb88b4e3c3b0c9",
+      "source_sha256": "4b6ea3f641c7c7b9b5123b90ebeb6a79ba10b7f7499897a0f0bb88b4e3c3b0c9",
+      "matches": true,
+      "size_bytes": 16572
+    },
+    "skill/scripts/engine/distribution/__init__.py": {
+      "archive_sha256": "7e7f1ba9cb504333d7ba395dc434315d8cf9b1603d9243e75642077dd9ba8dee",
+      "source_sha256": "7e7f1ba9cb504333d7ba395dc434315d8cf9b1603d9243e75642077dd9ba8dee",
+      "matches": true,
+      "size_bytes": 1295
+    },
+    "skill/scripts/engine/distribution/announcement_generator.py": {
+      "archive_sha256": "d7b129c02e6f85869aef94c12ed4ffb7cbde59c66cc546553115e3fa1283a87a",
+      "source_sha256": "d7b129c02e6f85869aef94c12ed4ffb7cbde59c66cc546553115e3fa1283a87a",
+      "matches": true,
+      "size_bytes": 4915
+    },
+    "skill/scripts/engine/distribution/distribution_orchestrator.py": {
+      "archive_sha256": "cb47ed06e1692ada0f4cf21a1f08ed9f8a5d765aec545472a8d1aae13eb1ba5b",
+      "source_sha256": "cb47ed06e1692ada0f4cf21a1f08ed9f8a5d765aec545472a8d1aae13eb1ba5b",
+      "matches": true,
+      "size_bytes": 9546
+    },
+    "skill/scripts/engine/distribution/distribution_types.py": {
+      "archive_sha256": "96bd650787321f38652e68b5c31bc93223b615aa1c9ffe446b6d29267f47bc0d",
+      "source_sha256": "96bd650787321f38652e68b5c31bc93223b615aa1c9ffe446b6d29267f47bc0d",
+      "matches": true,
+      "size_bytes": 8212
+    },
+    "skill/scripts/engine/distribution/distribution_verifier.py": {
+      "archive_sha256": "1c042c3d5c4029876bbf83d9243917bb5b5ef82b992d8860addf4bb3d9a08f02",
+      "source_sha256": "1c042c3d5c4029876bbf83d9243917bb5b5ef82b992d8860addf4bb3d9a08f02",
+      "matches": true,
+      "size_bytes": 4312
+    },
+    "skill/scripts/engine/distribution/installation_tester.py": {
+      "archive_sha256": "55ff84490f2e20fc59c2cef1b0369f9cce434f8978a060ac37c21283c1d07daf",
+      "source_sha256": "55ff84490f2e20fc59c2cef1b0369f9cce434f8978a060ac37c21283c1d07daf",
+      "matches": true,
+      "size_bytes": 7003
+    },
+    "skill/scripts/engine/distribution/maintenance_auditor.py": {
+      "archive_sha256": "62bab5046473f08faf050edefb4f821f43b2b946441c21ad74385c195f056b80",
+      "source_sha256": "62bab5046473f08faf050edefb4f821f43b2b946441c21ad74385c195f056b80",
+      "matches": true,
+      "size_bytes": 6881
+    },
+    "skill/scripts/engine/distribution/release_notes_generator.py": {
+      "archive_sha256": "e6f664711bb40057f877b184234077d48a46bc737870c405a4e99fd29ba9a4a9",
+      "source_sha256": "e6f664711bb40057f877b184234077d48a46bc737870c405a4e99fd29ba9a4a9",
+      "matches": true,
+      "size_bytes": 11588
+    },
+    "skill/scripts/engine/distribution/upgrade_manager.py": {
+      "archive_sha256": "e240494419c910d0f9e37b7311e9ab3ba8514e42dce46f4ab89a0b7254c7bbc9",
+      "source_sha256": "e240494419c910d0f9e37b7311e9ab3ba8514e42dce46f4ab89a0b7254c7bbc9",
+      "matches": true,
+      "size_bytes": 7895
+    },
+    "skill/scripts/engine/file_inventory.py": {
+      "archive_sha256": "08a9465df182a536a19814705912766c3a28ad66a78dd2694c79a207f815c83d",
+      "source_sha256": "08a9465df182a536a19814705912766c3a28ad66a78dd2694c79a207f815c83d",
+      "matches": true,
+      "size_bytes": 13450
+    },
+    "skill/scripts/engine/git/__init__.py": {
+      "archive_sha256": "08cce7ca708a06cc76c2ef994904356cfce5a37ddc615949eaa35e30206cb5b8",
+      "source_sha256": "08cce7ca708a06cc76c2ef994904356cfce5a37ddc615949eaa35e30206cb5b8",
+      "matches": true,
+      "size_bytes": 2814
+    },
+    "skill/scripts/engine/git/change_review.py": {
+      "archive_sha256": "4b1de606d372455f01ec827c39249d24d0e08766a401bb38d649625563930d57",
+      "source_sha256": "4b1de606d372455f01ec827c39249d24d0e08766a401bb38d649625563930d57",
+      "matches": true,
+      "size_bytes": 6812
+    },
+    "skill/scripts/engine/git/change_risk_analyzer.py": {
+      "archive_sha256": "a230cedecac8644092f6f5e45f205cfba99124c32f4a3d7c05d28bb1bdbffb7c",
+      "source_sha256": "a230cedecac8644092f6f5e45f205cfba99124c32f4a3d7c05d28bb1bdbffb7c",
+      "matches": true,
+      "size_bytes": 8127
+    },
+    "skill/scripts/engine/git/commit_approval.py": {
+      "archive_sha256": "da901daec0b383ac7a5dec3122ffc91de1bcae2d3e11b0635b628afd0bf93986",
+      "source_sha256": "da901daec0b383ac7a5dec3122ffc91de1bcae2d3e11b0635b628afd0bf93986",
+      "matches": true,
+      "size_bytes": 3787
+    },
+    "skill/scripts/engine/git/commit_executor.py": {
+      "archive_sha256": "dfbd7857bb05823b9761b40f71d3e3e4da42e1115fe256fb43c8ff31c4ee5b26",
+      "source_sha256": "dfbd7857bb05823b9761b40f71d3e3e4da42e1115fe256fb43c8ff31c4ee5b26",
+      "matches": true,
+      "size_bytes": 4964
+    },
+    "skill/scripts/engine/git/commit_message_generator.py": {
+      "archive_sha256": "929a831be4093525c9d8eefa9894ee17699f396570876fa48c3fc703850bf6ff",
+      "source_sha256": "929a831be4093525c9d8eefa9894ee17699f396570876fa48c3fc703850bf6ff",
+      "matches": true,
+      "size_bytes": 6781
+    },
+    "skill/scripts/engine/git/diff_analyzer.py": {
+      "archive_sha256": "5596e01b25525653ef453288fd544b1dd2c215ec8364c41bd9d97394957b1d4f",
+      "source_sha256": "5596e01b25525653ef453288fd544b1dd2c215ec8364c41bd9d97394957b1d4f",
+      "matches": true,
+      "size_bytes": 8235
+    },
+    "skill/scripts/engine/git/git_environment.py": {
+      "archive_sha256": "5e561b656cea32ec05f8fbe5f0888fe1330026e4f9d278e40a2c97bd2cd5725a",
+      "source_sha256": "5e561b656cea32ec05f8fbe5f0888fe1330026e4f9d278e40a2c97bd2cd5725a",
+      "matches": true,
+      "size_bytes": 9359
+    },
+    "skill/scripts/engine/git/git_orchestrator.py": {
+      "archive_sha256": "9481b3a04b5590807b3d0b488aa6dd9177072b8afeac987eaa8e00c11f5f8dd5",
+      "source_sha256": "9481b3a04b5590807b3d0b488aa6dd9177072b8afeac987eaa8e00c11f5f8dd5",
+      "matches": true,
+      "size_bytes": 8339
+    },
+    "skill/scripts/engine/git/git_report_generator.py": {
+      "archive_sha256": "2d82b720c8a18567bbeb7e3093919bee6e510a4d9862ce3cac82f034d514c989",
+      "source_sha256": "2d82b720c8a18567bbeb7e3093919bee6e510a4d9862ce3cac82f034d514c989",
+      "matches": true,
+      "size_bytes": 7197
+    },
+    "skill/scripts/engine/git/git_status_analyzer.py": {
+      "archive_sha256": "c2d42a5d511a94c66da685f6d95577d25deba9dfd89c24886fceaf6dcf8a7988",
+      "source_sha256": "c2d42a5d511a94c66da685f6d95577d25deba9dfd89c24886fceaf6dcf8a7988",
+      "matches": true,
+      "size_bytes": 3814
+    },
+    "skill/scripts/engine/git/git_types.py": {
+      "archive_sha256": "cc1d64720cdb10117df5424f129b4af2aa28c9d2218ea9ee9b23037ae6454c5a",
+      "source_sha256": "cc1d64720cdb10117df5424f129b4af2aa28c9d2218ea9ee9b23037ae6454c5a",
+      "matches": true,
+      "size_bytes": 12686
+    },
+    "skill/scripts/engine/git/pull_request_planner.py": {
+      "archive_sha256": "0b2320b15d75a4d3bfdaa546c36b83892e7548ed846f90acf53af596982e690e",
+      "source_sha256": "0b2320b15d75a4d3bfdaa546c36b83892e7548ed846f90acf53af596982e690e",
+      "matches": true,
+      "size_bytes": 6178
+    },
+    "skill/scripts/engine/git/push_approval.py": {
+      "archive_sha256": "69afeb42fbab6a71182d4f88762b386eed6265e30f545bf51e3eec52a07029bc",
+      "source_sha256": "69afeb42fbab6a71182d4f88762b386eed6265e30f545bf51e3eec52a07029bc",
+      "matches": true,
+      "size_bytes": 3329
+    },
+    "skill/scripts/engine/git/push_executor.py": {
+      "archive_sha256": "6c15423e9a038b8ff8dee3918453a011bebd16ea7cdbc582a74da57551889df5",
+      "source_sha256": "6c15423e9a038b8ff8dee3918453a011bebd16ea7cdbc582a74da57551889df5",
+      "matches": true,
+      "size_bytes": 3583
+    },
+    "skill/scripts/engine/git/remote_inspector.py": {
+      "archive_sha256": "32620e98f997b57ad882c35463f26036566b454e78cf0922ee399c10d7917de0",
+      "source_sha256": "32620e98f997b57ad882c35463f26036566b454e78cf0922ee399c10d7917de0",
+      "matches": true,
+      "size_bytes": 6422
+    },
+    "skill/scripts/engine/git/staging_approval.py": {
+      "archive_sha256": "87519e2533198a118e11b4f877c0f7d34154392239a942672835b2af4b425892",
+      "source_sha256": "87519e2533198a118e11b4f877c0f7d34154392239a942672835b2af4b425892",
+      "matches": true,
+      "size_bytes": 4833
+    },
+    "skill/scripts/engine/git/staging_executor.py": {
+      "archive_sha256": "03aae2b43a71839ef1600ba293a8ab24ef8d321f59ae662d2c6005dfcde0e87e",
+      "source_sha256": "03aae2b43a71839ef1600ba293a8ab24ef8d321f59ae662d2c6005dfcde0e87e",
+      "matches": true,
+      "size_bytes": 4036
+    },
+    "skill/scripts/engine/git/staging_planner.py": {
+      "archive_sha256": "f1c35c857a13ec1ef4e63ec3070598089c0ef22779890eee72e250a98f50d273",
+      "source_sha256": "f1c35c857a13ec1ef4e63ec3070598089c0ef22779890eee72e250a98f50d273",
+      "matches": true,
+      "size_bytes": 8570
+    },
+    "skill/scripts/engine/git_analyzer.py": {
+      "archive_sha256": "a19e397b06201b0e7a7e73bfbc56674af976f8e8200ba5eba9aa1a88e3b4d1f9",
+      "source_sha256": "a19e397b06201b0e7a7e73bfbc56674af976f8e8200ba5eba9aa1a88e3b4d1f9",
+      "matches": true,
+      "size_bytes": 6204
+    },
+    "skill/scripts/engine/governance.py": {
+      "archive_sha256": "57f68e44f2b76fd148c5617aa030962c624f0edbe8900cac15a5edd711ea56b6",
+      "source_sha256": "57f68e44f2b76fd148c5617aa030962c624f0edbe8900cac15a5edd711ea56b6",
+      "matches": true,
+      "size_bytes": 6845
+    },
+    "skill/scripts/engine/health_assessor.py": {
+      "archive_sha256": "0efaabe804b44f0006b663cc6423003c62cbf5063bff877d7e04a3eb2660db57",
+      "source_sha256": "0efaabe804b44f0006b663cc6423003c62cbf5063bff877d7e04a3eb2660db57",
+      "matches": true,
+      "size_bytes": 14579
+    },
+    "skill/scripts/engine/integration/__init__.py": {
+      "archive_sha256": "8c9622a56c0fa793d2ba900d7cb75978ffab9ce2ab6785658c514349c5e4c5ce",
+      "source_sha256": "8c9622a56c0fa793d2ba900d7cb75978ffab9ce2ab6785658c514349c5e4c5ce",
+      "matches": true,
+      "size_bytes": 1066
+    },
+    "skill/scripts/engine/integration/artifact_registry.py": {
+      "archive_sha256": "63a07f4567ce7c80d1d2bf504362208de51b3742907bdf69efee082b8c09b108",
+      "source_sha256": "63a07f4567ce7c80d1d2bf504362208de51b3742907bdf69efee082b8c09b108",
+      "matches": true,
+      "size_bytes": 19277
+    },
+    "skill/scripts/engine/integration/dependency_graph.py": {
+      "archive_sha256": "ce944c08e06196175a2d483d1036478736dd46694697ac460d1e740610a7d158",
+      "source_sha256": "ce944c08e06196175a2d483d1036478736dd46694697ac460d1e740610a7d158",
+      "matches": true,
+      "size_bytes": 2697
+    },
+    "skill/scripts/engine/integration/integration_report.py": {
+      "archive_sha256": "c5c4c9a13a9c0277aeba938de2c52d502f55341104d5c99cc5324a26dba8ca5c",
+      "source_sha256": "c5c4c9a13a9c0277aeba938de2c52d502f55341104d5c99cc5324a26dba8ca5c",
+      "matches": true,
+      "size_bytes": 6342
+    },
+    "skill/scripts/engine/integration/integration_types.py": {
+      "archive_sha256": "7ac55c187f005ab75a3d1dde9e1b2b6f5e3176328fbeb4feedfb8e599613493e",
+      "source_sha256": "7ac55c187f005ab75a3d1dde9e1b2b6f5e3176328fbeb4feedfb8e599613493e",
+      "matches": true,
+      "size_bytes": 5164
+    },
+    "skill/scripts/engine/integration/integration_validator.py": {
+      "archive_sha256": "9b0433e77a18a4b92c4ff8a1dd01c58278f1fe616dbc77d6e3f422a6500d55a3",
+      "source_sha256": "9b0433e77a18a4b92c4ff8a1dd01c58278f1fe616dbc77d6e3f422a6500d55a3",
+      "matches": true,
+      "size_bytes": 4305
+    },
+    "skill/scripts/engine/integration/lifecycle_orchestrator.py": {
+      "archive_sha256": "1ad25888b2a9ee9cf0d7b6a8ecc0de7a1fa8501f0d651e1d4ca67d5f4d9b8624",
+      "source_sha256": "1ad25888b2a9ee9cf0d7b6a8ecc0de7a1fa8501f0d651e1d4ca67d5f4d9b8624",
+      "matches": true,
+      "size_bytes": 3368
+    },
+    "skill/scripts/engine/integration/phase_registry.py": {
+      "archive_sha256": "af20c6e6f3fbecfcf7ef1829cde067b8780910fab01d462664b80364ac0a63bc",
+      "source_sha256": "af20c6e6f3fbecfcf7ef1829cde067b8780910fab01d462664b80364ac0a63bc",
+      "matches": true,
+      "size_bytes": 7798
+    },
+    "skill/scripts/engine/integration/schema_validator.py": {
+      "archive_sha256": "d8ae50f6b941d9ffc9e9a084adb4dee99feaaa4b591d8fc9b916450dff9f6cf0",
+      "source_sha256": "d8ae50f6b941d9ffc9e9a084adb4dee99feaaa4b591d8fc9b916450dff9f6cf0",
+      "matches": true,
+      "size_bytes": 3216
+    },
+    "skill/scripts/engine/maintenance/__init__.py": {
+      "archive_sha256": "73335d189b0ada77f847b70e187d238e1909bfa77a1954b5932d188e36933c84",
+      "source_sha256": "73335d189b0ada77f847b70e187d238e1909bfa77a1954b5932d188e36933c84",
+      "matches": true,
+      "size_bytes": 1197
+    },
+    "skill/scripts/engine/maintenance/documentation_auditor.py": {
+      "archive_sha256": "2a8a6e9b138fdfa27b5afcca71cc6ceeac441303cbd80b78a57e74b56b0f546e",
+      "source_sha256": "2a8a6e9b138fdfa27b5afcca71cc6ceeac441303cbd80b78a57e74b56b0f546e",
+      "matches": true,
+      "size_bytes": 8688
+    },
+    "skill/scripts/engine/maintenance/github_presentation.py": {
+      "archive_sha256": "ac9f4921261571198756da9ccb77533440b767ea3c816dd06d2beebd4734d878",
+      "source_sha256": "ac9f4921261571198756da9ccb77533440b767ea3c816dd06d2beebd4734d878",
+      "matches": true,
+      "size_bytes": 9641
+    },
+    "skill/scripts/engine/maintenance/license_auditor.py": {
+      "archive_sha256": "c6c237f3f61085d80a1428fb2fef26dffa3d4c06d7a16f1372570804e1db05fb",
+      "source_sha256": "c6c237f3f61085d80a1428fb2fef26dffa3d4c06d7a16f1372570804e1db05fb",
+      "matches": true,
+      "size_bytes": 6862
+    },
+    "skill/scripts/engine/maintenance/maintenance_orchestrator.py": {
+      "archive_sha256": "d0b006bbae179c5490a62c37e122b532f6be153f4fdd08e40bf26ca55b1f14ca",
+      "source_sha256": "d0b006bbae179c5490a62c37e122b532f6be153f4fdd08e40bf26ca55b1f14ca",
+      "matches": true,
+      "size_bytes": 19742
+    },
+    "skill/scripts/engine/maintenance/maintenance_planner.py": {
+      "archive_sha256": "1509a9388f9ef7b2d4e03137a8bd46b2a0de88af8f97c4083b93d5893f81e881",
+      "source_sha256": "1509a9388f9ef7b2d4e03137a8bd46b2a0de88af8f97c4083b93d5893f81e881",
+      "matches": true,
+      "size_bytes": 12102
+    },
+    "skill/scripts/engine/maintenance/media_auditor.py": {
+      "archive_sha256": "e8a3b62376a64497263e5a7439583c2bdd7c1a21bc3408cf6e8f8dc40ef1df0e",
+      "source_sha256": "e8a3b62376a64497263e5a7439583c2bdd7c1a21bc3408cf6e8f8dc40ef1df0e",
+      "matches": true,
+      "size_bytes": 5072
+    },
+    "skill/scripts/engine/maintenance/organization_analyzer.py": {
+      "archive_sha256": "deda77dd509e6ae4af2d016d4be1e1a431116c8beccfd10ed4f6068675f2fd0b",
+      "source_sha256": "deda77dd509e6ae4af2d016d4be1e1a431116c8beccfd10ed4f6068675f2fd0b",
+      "matches": true,
+      "size_bytes": 11617
+    },
+    "skill/scripts/engine/maintenance/readme_analyzer.py": {
+      "archive_sha256": "bb43360b31c67600070584ac50ffff3e87cb61ecaf56f4b8467c898e4533f5d8",
+      "source_sha256": "bb43360b31c67600070584ac50ffff3e87cb61ecaf56f4b8467c898e4533f5d8",
+      "matches": true,
+      "size_bytes": 9187
+    },
+    "skill/scripts/engine/maintenance/readme_generator.py": {
+      "archive_sha256": "fbe3f6d27aba6794f785f662b9821ce3d1643e4f088afc46f36f71ceb1a050c1",
+      "source_sha256": "fbe3f6d27aba6794f785f662b9821ce3d1643e4f088afc46f36f71ceb1a050c1",
+      "matches": true,
+      "size_bytes": 9809
+    },
+    "skill/scripts/engine/maintenance/reference_analyzer.py": {
+      "archive_sha256": "12f9a19f99663a6e8924d482aeb2bc1726f3ab5d78c63b34cd6e31b85042bd58",
+      "source_sha256": "12f9a19f99663a6e8924d482aeb2bc1726f3ab5d78c63b34cd6e31b85042bd58",
+      "matches": true,
+      "size_bytes": 12377
+    },
+    "skill/scripts/engine/maintenance/unused_file_detector.py": {
+      "archive_sha256": "54aebf9ac2c71777a66a767eeb969eb439da73ed3655565e2ddd2f04a6dd69c3",
+      "source_sha256": "54aebf9ac2c71777a66a767eeb969eb439da73ed3655565e2ddd2f04a6dd69c3",
+      "matches": true,
+      "size_bytes": 6490
+    },
+    "skill/scripts/engine/orchestrator.py": {
+      "archive_sha256": "03ce75f2fe1677bd5cebad5983dfe8837ef14a61fdc22a332a3467a30f3197b9",
+      "source_sha256": "03ce75f2fe1677bd5cebad5983dfe8837ef14a61fdc22a332a3467a30f3197b9",
+      "matches": true,
+      "size_bytes": 6453
+    },
+    "skill/scripts/engine/release/__init__.py": {
+      "archive_sha256": "b446c1ed4786d7b346c60a8d4e78d7052de85459c9cdaa45d8264b86d7f5021e",
+      "source_sha256": "b446c1ed4786d7b346c60a8d4e78d7052de85459c9cdaa45d8264b86d7f5021e",
+      "matches": true,
+      "size_bytes": 1188
+    },
+    "skill/scripts/engine/release/audit_runner.py": {
+      "archive_sha256": "5202bd58ef9bb9879fcb55ee5dc5b80af7ec2ff83770955d4714ad407c1609f3",
+      "source_sha256": "5202bd58ef9bb9879fcb55ee5dc5b80af7ec2ff83770955d4714ad407c1609f3",
+      "matches": true,
+      "size_bytes": 12871
+    },
+    "skill/scripts/engine/release/integrity_verifier.py": {
+      "archive_sha256": "6a5da65c81667b32d7b4ef7bf0819a04a6b4813f91a5e2eb1bfac72b3cfc3e21",
+      "source_sha256": "6a5da65c81667b32d7b4ef7bf0819a04a6b4813f91a5e2eb1bfac72b3cfc3e21",
+      "matches": true,
+      "size_bytes": 7976
+    },
+    "skill/scripts/engine/release/manifest_generator.py": {
+      "archive_sha256": "72207c21d8677d75fba12681b6359fadc0d3fef82c4e0e44b1ea8a9db2fdcf80",
+      "source_sha256": "72207c21d8677d75fba12681b6359fadc0d3fef82c4e0e44b1ea8a9db2fdcf80",
+      "matches": true,
+      "size_bytes": 3934
+    },
+    "skill/scripts/engine/release/package_builder.py": {
+      "archive_sha256": "d447a9794e1fb69cec365c32df37f9ec34c1340acc744bf2ef8693e6113d1509",
+      "source_sha256": "d447a9794e1fb69cec365c32df37f9ec34c1340acc744bf2ef8693e6113d1509",
+      "matches": true,
+      "size_bytes": 2353
+    },
+    "skill/scripts/engine/release/release_orchestrator.py": {
+      "archive_sha256": "05071f9e4c88841bcb1707e78a3801901225d57d392fecc8fbe2c8fb968dfbf6",
+      "source_sha256": "05071f9e4c88841bcb1707e78a3801901225d57d392fecc8fbe2c8fb968dfbf6",
+      "matches": true,
+      "size_bytes": 8092
+    },
+    "skill/scripts/engine/release/release_report.py": {
+      "archive_sha256": "46a6115e40fa754a0ac27cf68306e8fc678680f4a322fd67aa6a80f6425871c1",
+      "source_sha256": "46a6115e40fa754a0ac27cf68306e8fc678680f4a322fd67aa6a80f6425871c1",
+      "matches": true,
+      "size_bytes": 5777
+    },
+    "skill/scripts/engine/release/release_types.py": {
+      "archive_sha256": "9f8d450deea5d19636d6e744852997d817aa3a5acb4311fb02415e25eeff030a",
+      "source_sha256": "9f8d450deea5d19636d6e744852997d817aa3a5acb4311fb02415e25eeff030a",
+      "matches": true,
+      "size_bytes": 4507
+    },
+    "skill/scripts/engine/release/release_validator.py": {
+      "archive_sha256": "b106ea4433f64ac878550bd14f8af40c29e0a69a869f069e182ed86068c61ce1",
+      "source_sha256": "b106ea4433f64ac878550bd14f8af40c29e0a69a869f069e182ed86068c61ce1",
+      "matches": true,
+      "size_bytes": 7646
+    },
+    "skill/scripts/engine/release/reproducibility_checker.py": {
+      "archive_sha256": "e100d86c6fe8a617c8a1521cbd678adbd630abe03ee9144532613f09a026263d",
+      "source_sha256": "e100d86c6fe8a617c8a1521cbd678adbd630abe03ee9144532613f09a026263d",
+      "matches": true,
+      "size_bytes": 3132
+    },
+    "skill/scripts/engine/repair/__init__.py": {
+      "archive_sha256": "f1081362da91244afbeb572c16b83b0b3ae32d20e5ed1264301b3d61c2cd51e1",
+      "source_sha256": "f1081362da91244afbeb572c16b83b0b3ae32d20e5ed1264301b3d61c2cd51e1",
+      "matches": true,
+      "size_bytes": 1979
+    },
+    "skill/scripts/engine/repair/approval_manager.py": {
+      "archive_sha256": "03ba02dcdf1057864d9e73203250f96a05b695347e972db4fa233cc19d14cc2e",
+      "source_sha256": "03ba02dcdf1057864d9e73203250f96a05b695347e972db4fa233cc19d14cc2e",
+      "matches": true,
+      "size_bytes": 5221
+    },
+    "skill/scripts/engine/repair/attempt_controller.py": {
+      "archive_sha256": "fbc23b06248aba80cde88325378ea331bceaf694f7d81f26acfec6358ca8afcb",
+      "source_sha256": "fbc23b06248aba80cde88325378ea331bceaf694f7d81f26acfec6358ca8afcb",
+      "matches": true,
+      "size_bytes": 3572
+    },
+    "skill/scripts/engine/repair/backup_manager.py": {
+      "archive_sha256": "933897391cb44a6ba562ef623a2b9f0171ce9602863c52157d4b152898da5e21",
+      "source_sha256": "933897391cb44a6ba562ef623a2b9f0171ce9602863c52157d4b152898da5e21",
+      "matches": true,
+      "size_bytes": 4528
+    },
+    "skill/scripts/engine/repair/change_guard.py": {
+      "archive_sha256": "53e6a9c901ed41485bf3c2c5f809a6ca0721126e883c1f55d9de778edb04f125",
+      "source_sha256": "53e6a9c901ed41485bf3c2c5f809a6ca0721126e883c1f55d9de778edb04f125",
+      "matches": true,
+      "size_bytes": 4654
+    },
+    "skill/scripts/engine/repair/finding_ingestor.py": {
+      "archive_sha256": "ffe89673967da392af3d2edf347ead50ad09fb8f741b4d68d8a595d9ca655fae",
+      "source_sha256": "ffe89673967da392af3d2edf347ead50ad09fb8f741b4d68d8a595d9ca655fae",
+      "matches": true,
+      "size_bytes": 18404
+    },
+    "skill/scripts/engine/repair/patch_generator.py": {
+      "archive_sha256": "546e4282a75f6bc2a6eb9dfd8cd3473cc90b011218b41bf7e5bcdbb4769576b3",
+      "source_sha256": "546e4282a75f6bc2a6eb9dfd8cd3473cc90b011218b41bf7e5bcdbb4769576b3",
+      "matches": true,
+      "size_bytes": 5559
+    },
+    "skill/scripts/engine/repair/regression_runner.py": {
+      "archive_sha256": "db1735cc112aee642ca69cc4f6218339c87c023b149d2e617a72d2d223f8922a",
+      "source_sha256": "db1735cc112aee642ca69cc4f6218339c87c023b149d2e617a72d2d223f8922a",
+      "matches": true,
+      "size_bytes": 6139
+    },
+    "skill/scripts/engine/repair/repair_classifier.py": {
+      "archive_sha256": "91020690a249c39defdf4d0d372ac76d24f6b5ae5de691fea3e0fdbe0c22b625",
+      "source_sha256": "91020690a249c39defdf4d0d372ac76d24f6b5ae5de691fea3e0fdbe0c22b625",
+      "matches": true,
+      "size_bytes": 6945
+    },
+    "skill/scripts/engine/repair/repair_executor.py": {
+      "archive_sha256": "314c7dfa3dbb13143e61575e2989a14e2baa6ee2ec14017d3ae2d7ee087ed0ec",
+      "source_sha256": "314c7dfa3dbb13143e61575e2989a14e2baa6ee2ec14017d3ae2d7ee087ed0ec",
+      "matches": true,
+      "size_bytes": 6295
+    },
+    "skill/scripts/engine/repair/repair_orchestrator.py": {
+      "archive_sha256": "95aa1a24291942262e2f2c59dd3f76c0f78e1d321cb6cada072c7ed5debabdac",
+      "source_sha256": "95aa1a24291942262e2f2c59dd3f76c0f78e1d321cb6cada072c7ed5debabdac",
+      "matches": true,
+      "size_bytes": 10226
+    },
+    "skill/scripts/engine/repair/repair_planner.py": {
+      "archive_sha256": "3b8cbfe64c8f7fe7334f23e41e49f17d8f5f96c5683a30f39fe74121c64a2905",
+      "source_sha256": "3b8cbfe64c8f7fe7334f23e41e49f17d8f5f96c5683a30f39fe74121c64a2905",
+      "matches": true,
+      "size_bytes": 7086
+    },
+    "skill/scripts/engine/repair/repair_report_generator.py": {
+      "archive_sha256": "57315f0a29090d645a4feda2abbfe222378a01397af0db6534b55c1de9300297",
+      "source_sha256": "57315f0a29090d645a4feda2abbfe222378a01397af0db6534b55c1de9300297",
+      "matches": true,
+      "size_bytes": 9064
+    },
+    "skill/scripts/engine/repair/repair_types.py": {
+      "archive_sha256": "eca31b328aac811146dd4694d90c3fdbf000767d67876a9bdcd24bb6f384c60c",
+      "source_sha256": "eca31b328aac811146dd4694d90c3fdbf000767d67876a9bdcd24bb6f384c60c",
+      "matches": true,
+      "size_bytes": 11416
+    },
+    "skill/scripts/engine/repair/repair_validator.py": {
+      "archive_sha256": "bfac5a1c0f3f645a28018437403671ed91a3b093e1b0b95d27a700453079de09",
+      "source_sha256": "bfac5a1c0f3f645a28018437403671ed91a3b093e1b0b95d27a700453079de09",
+      "matches": true,
+      "size_bytes": 7011
+    },
+    "skill/scripts/engine/repair/risk_assessor.py": {
+      "archive_sha256": "21065465c3b9e9ff8610c715d9ceda0c55a411a8555159bb04382eeccc71b5ed",
+      "source_sha256": "21065465c3b9e9ff8610c715d9ceda0c55a411a8555159bb04382eeccc71b5ed",
+      "matches": true,
+      "size_bytes": 1733
+    },
+    "skill/scripts/engine/repair/rollback_manager.py": {
+      "archive_sha256": "d8dbb135265d93b310cb3b78588088cbc4163f530ad9efe1b38c16a304f07a8f",
+      "source_sha256": "d8dbb135265d93b310cb3b78588088cbc4163f530ad9efe1b38c16a304f07a8f",
+      "matches": true,
+      "size_bytes": 6855
+    },
+    "skill/scripts/engine/report_generator.py": {
+      "archive_sha256": "3aadb17d1dd9daaa6a18a0e663610352934c8c89cf43595a76c6443f9be83ecb",
+      "source_sha256": "3aadb17d1dd9daaa6a18a0e663610352934c8c89cf43595a76c6443f9be83ecb",
+      "matches": true,
+      "size_bytes": 12654
+    },
+    "skill/scripts/engine/security/__init__.py": {
+      "archive_sha256": "fc34ecfc4ab665100f10d14b63940afd2242c5b6db17ea8b0c1932c10ba5c010",
+      "source_sha256": "fc34ecfc4ab665100f10d14b63940afd2242c5b6db17ea8b0c1932c10ba5c010",
+      "matches": true,
+      "size_bytes": 2038
+    },
+    "skill/scripts/engine/security/cicd_analyzer.py": {
+      "archive_sha256": "ce42414ed1ef33b525e07f10c30bdebc384e5e16d8d846416887ea60e0aaf3c9",
+      "source_sha256": "ce42414ed1ef33b525e07f10c30bdebc384e5e16d8d846416887ea60e0aaf3c9",
+      "matches": true,
+      "size_bytes": 6295
+    },
+    "skill/scripts/engine/security/configuration_auditor.py": {
+      "archive_sha256": "c624df1f424c6ae5c05f19462bda8d9951caf98f49be796d4ed1ed01b660fcb6",
+      "source_sha256": "c624df1f424c6ae5c05f19462bda8d9951caf98f49be796d4ed1ed01b660fcb6",
+      "matches": true,
+      "size_bytes": 13129
+    },
+    "skill/scripts/engine/security/dependency_auditor.py": {
+      "archive_sha256": "d2e8a63a4054f6750fc0371996851c69cd1ee0ac511b0b2c6dddba70fe8a8c55",
+      "source_sha256": "d2e8a63a4054f6750fc0371996851c69cd1ee0ac511b0b2c6dddba70fe8a8c55",
+      "matches": true,
+      "size_bytes": 19221
+    },
+    "skill/scripts/engine/security/secret_scanner.py": {
+      "archive_sha256": "a6ae4cfb310750e98b9ff6542398d6d34a035433102b76eb8953c361e92e2ee0",
+      "source_sha256": "a6ae4cfb310750e98b9ff6542398d6d34a035433102b76eb8953c361e92e2ee0",
+      "matches": true,
+      "size_bytes": 10824
+    },
+    "skill/scripts/engine/security/security_orchestrator.py": {
+      "archive_sha256": "4f4568a48124214da683a6d751f2df5da6e4392f8ae9ecd8e8fd9cb7dad78edb",
+      "source_sha256": "4f4568a48124214da683a6d751f2df5da6e4392f8ae9ecd8e8fd9cb7dad78edb",
+      "matches": true,
+      "size_bytes": 4610
+    },
+    "skill/scripts/engine/security/security_pattern_analyzer.py": {
+      "archive_sha256": "80f6197cd83a3b6945b32005937d1d1e0e8873fae77ea2b405de6135faacc492",
+      "source_sha256": "80f6197cd83a3b6945b32005937d1d1e0e8873fae77ea2b405de6135faacc492",
+      "matches": true,
+      "size_bytes": 12115
+    },
+    "skill/scripts/engine/security/security_report_generator.py": {
+      "archive_sha256": "707943f2080635000637c1db26517df68a2f481a5a3569727b13b17bf717426f",
+      "source_sha256": "707943f2080635000637c1db26517df68a2f481a5a3569727b13b17bf717426f",
+      "matches": true,
+      "size_bytes": 12963
+    },
+    "skill/scripts/engine/security/security_risk_assessor.py": {
+      "archive_sha256": "90433915202182fc3b54f4b76f059ef0c335404b8b8a9a132c91859796aab4c9",
+      "source_sha256": "90433915202182fc3b54f4b76f059ef0c335404b8b8a9a132c91859796aab4c9",
+      "matches": true,
+      "size_bytes": 4260
+    },
+    "skill/scripts/engine/security/supply_chain_analyzer.py": {
+      "archive_sha256": "3ab49af046606a132bbee7099e415997f7c3921b848775aaf01912d20b8dfb53",
+      "source_sha256": "3ab49af046606a132bbee7099e415997f7c3921b848775aaf01912d20b8dfb53",
+      "matches": true,
+      "size_bytes": 10070
+    },
+    "skill/scripts/engine/security/test_discovery.py": {
+      "archive_sha256": "195f9372ca683a1764f539dc8db015d801305d2e669e3cd824332d106961e91f",
+      "source_sha256": "195f9372ca683a1764f539dc8db015d801305d2e669e3cd824332d106961e91f",
+      "matches": true,
+      "size_bytes": 7936
+    },
+    "skill/scripts/engine/security/test_readiness.py": {
+      "archive_sha256": "4f4389c62ef1d858ff633060ea3cc1193e7277d39c1110d4bfb44e7d856f1bb0",
+      "source_sha256": "4f4389c62ef1d858ff633060ea3cc1193e7277d39c1110d4bfb44e7d856f1bb0",
+      "matches": true,
+      "size_bytes": 2711
+    },
+    "skill/scripts/engine/security/test_result_analyzer.py": {
+      "archive_sha256": "2c51f923e6149aa410d987a86273290cdded25b30982a85fe13ead2bca5dfc47",
+      "source_sha256": "2c51f923e6149aa410d987a86273290cdded25b30982a85fe13ead2bca5dfc47",
+      "matches": true,
+      "size_bytes": 3935
+    },
+    "skill/scripts/engine/security/test_runner.py": {
+      "archive_sha256": "67db22cce10010c4a5329efdbed2fa41bac8d977167e5437dc32cd28c3f340a9",
+      "source_sha256": "67db22cce10010c4a5329efdbed2fa41bac8d977167e5437dc32cd28c3f340a9",
+      "matches": true,
+      "size_bytes": 6686
+    },
+    "skill/scripts/engine/security/types.py": {
+      "archive_sha256": "556d6de416498df400568324f8af319f244ecf8f83d23a5e2f00ba17c1c5e797",
+      "source_sha256": "556d6de416498df400568324f8af319f244ecf8f83d23a5e2f00ba17c1c5e797",
+      "matches": true,
+      "size_bytes": 7382
+    },
+    "skill/scripts/engine/testing_ci.py": {
+      "archive_sha256": "27bb46248a538ec2f4dbec2f54a1e1f37f727113ba57df4ad9c7bd3f7843b874",
+      "source_sha256": "27bb46248a538ec2f4dbec2f54a1e1f37f727113ba57df4ad9c7bd3f7843b874",
+      "matches": true,
+      "size_bytes": 8131
+    },
+    "skill/scripts/engine/types.py": {
+      "archive_sha256": "70766380747dc660c7d1c95b37dfa6d8e7f2ea3d8871bc240bc3aa7a61df0bec",
+      "source_sha256": "70766380747dc660c7d1c95b37dfa6d8e7f2ea3d8871bc240bc3aa7a61df0bec",
+      "matches": true,
+      "size_bytes": 4930
+    },
+    "skill/scripts/repocraft_git.py": {
+      "archive_sha256": "279dd481ca46dfc74c37590327d7cbe9eb7c0acf8e832b96c4a80b36ba05eebf",
+      "source_sha256": "279dd481ca46dfc74c37590327d7cbe9eb7c0acf8e832b96c4a80b36ba05eebf",
+      "matches": true,
+      "size_bytes": 12581
+    },
+    "skill/scripts/repocraft_intel.py": {
+      "archive_sha256": "3ce26d647ffada4ad1fbee3d169e34096dbad16f3a93cfaf2a0dfee7eac6fd20",
+      "source_sha256": "3ce26d647ffada4ad1fbee3d169e34096dbad16f3a93cfaf2a0dfee7eac6fd20",
+      "matches": true,
+      "size_bytes": 4022
+    },
+    "skill/scripts/repocraft_maintenance.py": {
+      "archive_sha256": "678c27da5c1b46d5e1e6a264613f82b6aa2159681b3b5050e17a79ea71773ad9",
+      "source_sha256": "678c27da5c1b46d5e1e6a264613f82b6aa2159681b3b5050e17a79ea71773ad9",
+      "matches": true,
+      "size_bytes": 3794
+    },
+    "skill/scripts/repocraft_release.py": {
+      "archive_sha256": "67639d8d134cbd78fcf883cef360dd88946221a7ede643157a22b6c8a8cd2f01",
+      "source_sha256": "67639d8d134cbd78fcf883cef360dd88946221a7ede643157a22b6c8a8cd2f01",
+      "matches": true,
+      "size_bytes": 12626
+    },
+    "skill/scripts/repocraft_repair.py": {
+      "archive_sha256": "85df9e8b747ff682a253a51623d85bb59266b089c0acb045e49911b0fc79308b",
+      "source_sha256": "85df9e8b747ff682a253a51623d85bb59266b089c0acb045e49911b0fc79308b",
+      "matches": true,
+      "size_bytes": 4463
+    },
+    "skill/scripts/repocraft_security.py": {
+      "archive_sha256": "01199f542e950b786143fd8beef32a2d23504b490895f39c9780afb32cc0f6aa",
+      "source_sha256": "01199f542e950b786143fd8beef32a2d23504b490895f39c9780afb32cc0f6aa",
+      "matches": true,
+      "size_bytes": 4631
+    },
+    "skill/scripts/repocraft_selfcheck.py": {
+      "archive_sha256": "7d35e41460c1e3bb5e0368de5f3647f96b5be87caa035ef0a693f205fb20b99c",
+      "source_sha256": "7d35e41460c1e3bb5e0368de5f3647f96b5be87caa035ef0a693f205fb20b99c",
+      "matches": true,
+      "size_bytes": 37430
+    },
+    "skill/scripts/repocraft_status.py": {
+      "archive_sha256": "4218c946384a413f06a06e3bb627f6979ff2ecf4725b8558a1f901892bb57ff8",
+      "source_sha256": "4218c946384a413f06a06e3bb627f6979ff2ecf4725b8558a1f901892bb57ff8",
+      "matches": true,
+      "size_bytes": 12168
+    }
+  }
+}

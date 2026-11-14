@@ -13,5 +13,6 @@
   "git_script": "skill/scripts/repocraft_git.py",
   "status_script": "skill/scripts/repocraft_status.py",
   "release_script": "skill/scripts/repocraft_release.py",
+  "selfcheck_script": "skill/scripts/repocraft_selfcheck.py",
   "note": "Phase 7 Release Publication, Distribution, Adoption & Post-Release Maintenance implemented. Release candidate verification, automated upgrade/rollback, multi-platform CI/CD, adoption documentation, and post-release maintenance auditing completed. Candidate distribution ready for maintainer sign-off under Gate E."
 }

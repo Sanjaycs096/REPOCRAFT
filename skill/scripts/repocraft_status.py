@@ -12,6 +12,32 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+# Reconfigure standard streams to UTF-8 with replacement for Windows / non-UTF-8 consoles
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
+def safe_print(*args, sep: str = " ", end: str = "\n", file=None, flush: bool = False, **kwargs) -> None:
+    """Print text safely across platforms without raising UnicodeEncodeError."""
+    target_file = file or sys.stdout
+    text = sep.join(str(a) for a in args) + end
+    try:
+        target_file.write(text)
+    except UnicodeEncodeError:
+        enc = getattr(target_file, "encoding", None) or "ascii"
+        safe_text = text.encode(enc, errors="backslashreplace").decode(enc, errors="replace")
+        target_file.write(safe_text)
+    if flush:
+        target_file.flush()
+
 # Add skill/scripts to sys.path so engine packages import cleanly
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
@@ -160,8 +186,29 @@ def inspect_status(
 
 def format_text_output(status_data: Dict[str, Any]) -> str:
     """Format status report for console display."""
+    enc = getattr(sys.stdout, "encoding", None) or "utf-8"
+
+    def _can(s: str) -> bool:
+        try:
+            s.encode(enc)
+            return True
+        except Exception:
+            return False
+
+    can_unicode = _can("🟢") and _can("❌")
     status = status_data["overall_status"]
-    status_icon = "🟢" if status == "READY" else ("🟡" if "LIMITATIONS" in status else "🔴")
+    if can_unicode:
+        status_icon = "🟢" if status == "READY" else ("🟡" if "LIMITATIONS" in status else "🔴")
+        icon_err = "❌"
+        icon_warn = "⚠️"
+        icon_info = "ℹ️"
+        icon_bullet = "•"
+    else:
+        status_icon = "[READY]" if status == "READY" else ("[LIMITATIONS]" if "LIMITATIONS" in status else "[NOT_READY]")
+        icon_err = "[FAIL]"
+        icon_warn = "[WARN]"
+        icon_info = "[INFO]"
+        icon_bullet = "*"
 
     lines = [
         "==================================================================",
@@ -191,10 +238,10 @@ def format_text_output(status_data: Dict[str, Any]) -> str:
         lines.append(f"Integrity Status:    {valid_str}")
         if inst.get("errors"):
             for err in inst["errors"]:
-                lines.append(f"  ❌ {err}")
+                lines.append(f"  {icon_err} {err}")
         if inst.get("warnings"):
             for w in inst["warnings"]:
-                lines.append(f"  ⚠️ {w}")
+                lines.append(f"  {icon_warn} {w}")
 
     if status_data["package_verification"].get("checked"):
         lines.append("")
@@ -207,21 +254,21 @@ def format_text_output(status_data: Dict[str, Any]) -> str:
         lines.append(f"Path Traversal Safe: {pkg.get('path_traversal_safe')}")
         if pkg.get("errors"):
             for err in pkg["errors"]:
-                lines.append(f"  ❌ {err}")
+                lines.append(f"  {icon_err} {err}")
 
     lines.extend([
         "",
         "--- Registered Lifecycle Phases ---",
     ])
     for p in status_data["available_phases"]:
-        lines.append(f"  • {p['name']} ({p['entry_point']})")
+        lines.append(f"  {icon_bullet} {p['name']} ({p['entry_point']})")
 
     lines.extend([
         "",
         "--- Known Limitations ---",
     ])
     for lim in status_data["known_limitations"]:
-        lines.append(f"  ℹ️ {lim}")
+        lines.append(f"  {icon_info} {lim}")
 
     lines.append("==================================================================")
     return "\n".join(lines)
@@ -249,9 +296,9 @@ def main() -> int:
     )
 
     if args.json:
-        print(json.dumps(status_data, indent=2))
+        safe_print(json.dumps(status_data, indent=2))
     else:
-        print(format_text_output(status_data))
+        safe_print(format_text_output(status_data))
 
     overall = status_data["overall_status"]
     if overall in ("READY", "READY_WITH_LIMITATIONS"):

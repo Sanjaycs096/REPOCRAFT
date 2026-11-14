@@ -87,7 +87,9 @@ The first adapter target is Antigravity project-level skills:
         │   ├── github-presentation-policy.md
         │   ├── security-testing-policy.md
         │   ├── repair-and-regression-policy.md
-        │   └── git-workflow-policy.md
+        │   ├── git-workflow-policy.md
+        │   ├── agent-compatibility.md
+        │   └── release-and-portability-policy.md
         └── scripts/
             ├── repocraft_intel.py
             ├── repocraft_maintenance.py
@@ -96,6 +98,7 @@ The first adapter target is Antigravity project-level skills:
             ├── repocraft_git.py
             ├── repocraft_status.py
             ├── repocraft_release.py
+            ├── repocraft_selfcheck.py
             └── engine/
                 ├── discovery.py
                 ├── file_inventory.py
@@ -389,6 +392,34 @@ python skill/scripts/repocraft_release.py generate-maintenance-report
 - `upgrade-validation.json`: Upgrade simulation, backup creation verification, and rollback validation.
 - `maintenance-report.json`: Post-release health audit, manifest consistency, and AST-verified zero telemetry.
 - `phase7-report.md`: Comprehensive Phase 7 distribution and maintenance executive report.
+
+---
+
+## Self-Verification Gate & Reliability Hardening
+
+RepoCraft provides an automated, read-only self-audit gate (`repocraft_selfcheck.py`) that evaluates RepoCraft against its own safety, architecture, policy, and packaging invariants before release:
+
+```bash
+# Run the 12-point self-verification gate
+python skill/scripts/repocraft_selfcheck.py --target . --output reports/self-verification/
+
+# Run complete self-verification including the automated test suite
+python skill/scripts/repocraft_selfcheck.py --target . --output reports/self-verification/ --run-tests
+```
+
+### Self-Verification Gates Evaluated
+1. **GATE_01_GIT_BASELINE**: Validates clean Git root, branch tracking, and remote configuration.
+2. **GATE_02_MODULE_COMPLETENESS**: Verifies all Phase 0–7 CLI entrypoints and engine modules are present.
+3. **GATE_03_POLICY_GOVERNANCE**: Verifies 11 reference safety policies are present and unmodified.
+4. **GATE_04_LIFECYCLE_HANDOFFS**: Verifies lifecycle orchestrator, phase registry, and dependency DAG.
+5. **GATE_05_APPROVAL_BOUNDARIES**: Strictly verifies that destructive actions (staging, commit, push) fail without explicit user approvals.
+6. **GATE_06_DISTRIBUTION_INTEGRITY**: Verifies release ZIP SHA-256 hash, path traversal safety, and zero hardcoded secrets.
+7. **GATE_07_PACKAGE_REPRODUCIBILITY**: Verifies deterministic byte-for-byte package archive generation.
+8. **GATE_08_ISOLATED_FIXTURE_ACCEPTANCE**: Executes clean installer verification in disposable scratch fixtures.
+9. **GATE_09_UPGRADE_AND_ROLLBACK**: Verifies non-destructive upgrade simulation, backup creation, and rollback restoration.
+10. **GATE_10_CI_MATRIX_CONSISTENCY**: Verifies GitHub Actions cross-platform workflow configuration and encoding safeguards.
+11. **GATE_11_CLAIM_AUDIT**: Verifies factual precision of documentation, disclaimers, and compatibility matrices.
+12. **GATE_12_AUTOMATED_TESTS**: Runs full automated pytest suite across unit, integration, and distribution tests.
 
 ---
 
